@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSP1</title>
+    <script src="js/script.js"></script>
 </head>
-<body>
+<body   onload="message('LOAD')" 
+        onresize="message('RSIZE')"
+        onclick="message('Click')"
+        onmouseover="message('Hover')">
 <!--
     <script>
         alert("test 1");
@@ -134,7 +138,8 @@
 
 <h1 id = "code">JavaScript.</h1>
 <p>Maybe, using HTML 5 or CSS 3, you've added what we call a little bit of interactivity to your page.</p>
-
+<p id = "output"></p>
+<p id = "demo">Wait for it...</p>
 <!--  
     <script>document.getElementById('code').innerHTML = "Da Boss";</script>
     <script>document.getElementById('code').innerHTML = "Da Boss";</script>
@@ -177,16 +182,16 @@
     console.log(name);
 </script>
 -->
+<button type="button" onclick="displayDate()">Dispaly Date</button>
 
 <script>
-    var name;
-    name = prompt ("Name ?");
-    document.write(name);
-    document.write("<h2>" + name + "</h2>");
-    document.write(document.title + "<br>");
-    var xxx = document.getElementsByTagName('p1');
-    document.write(xxx + "</br>");
-    document.write(xxx.length);
+    test();
+    test2();
+    message();
+    displayDate();
 </script>
+
+
 </body>
 </html>
+
