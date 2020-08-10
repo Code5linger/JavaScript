@@ -96,6 +96,7 @@
         document.write("<h1>" + name + "</h1>");
     }
 */
+/*
     var z = "Yo";
     test2(z);
     console.log(z);
@@ -105,4 +106,20 @@
 
     function test2(name){
         alert(name);
+    }
+*/
+/*
+    function hello(fname = "Ula", lname = "La"){
+        document.write("<br>" + "Hello" + " "+ fname + " "+ lname);
+    }
+*/
+    function name(fname = "XXX", lname = "zzz"){
+        var fname;
+        //fname = prompt("Inser First Name");
+
+        var lname;
+        //lname = prompt ("Insert Last Name");
+
+        document.write( "<h1>" + fname + " "+ lname + "</h1>");
+
     }
