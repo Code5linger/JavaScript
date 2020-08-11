@@ -113,6 +113,7 @@
         document.write("<br>" + "Hello" + " "+ fname + " "+ lname);
     }
 */
+/*
     function name(fname = "XXX", lname = "zzz"){
         var fname;
         //fname = prompt("Inser First Name");
@@ -123,3 +124,9 @@
         document.write( "<h1>" + fname + " "+ lname + "</h1>");
 
     }
+    */
+
+   function message(msg)
+   {
+         document.getElementById('output').innerHTML = msg + " event";
+   }

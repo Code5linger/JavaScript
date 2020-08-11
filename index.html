@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSW1</title>
-
+    <script src="js/script.js"></script>
 </head>
-<body>
+<body onload="message('LOAD')" onresize="message('RESIZE')">
     Hi There<br/>
     <!--
         <script>
@@ -130,6 +130,10 @@ wcMsg(x);
         msg();
     </script>
 
+    <p onclick="message('CLICK')">It is possible to call functions based on Events</p>
+    <p onmouseover="message('MouseOver')">Click on the paragraph above to trigger an <em>onclick</em> event.  Reload the page to see an onload event</p>
+  
+    <p id = "output"><p>
     Good-bye
 </body>
 </html>
