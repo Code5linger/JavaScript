@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+    <style>
+
+        button{
+  width:150px;
+  background-color: #00CCEE;
+  margin-left:15px;
+  font-size:120%;
+}
+p{
+  border:2px solid black;
+	text-align: center;
+	margin: 20px;
+	width:250px;
+}
+
+#stuff{
+	text-align: center;
+  color:white;
+	background-color: #7F7F7F;
+}
+
+.closed{
+    display: none;
+}
+.open{
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <h1>Dom Test 2</h1>
+
+    <button onclick="document.getElementById('5').innerHTML = 'First Button Clicked';">First</button>
+    <button onclick="document.getElementById('5').innerHTML = 'Second Button CLicked';">Second</button>
+    <button onclick="document.getElementById('1').innerHTML = 'Third Button Clicked';">Third</button>
+    <button onclick="document.getElementById('4').innerHTML = 'Fourth Button Clicked';">Fourth</button>
+    <button onclick="document.getElementById('2').innerHTML = 'Fifth Button CLicked';">Fifth</button>
+    <button onclick="document.getElementById('3').innerHTML = 'Reset';">Reset</button>
+
+    <button onclick="openMe()">Open</button>
+    <button>Close</button>
+
+    <p id="1">AAAAAAAAAAAAAA</p>
+    <p id="2">BBBBBBBBBBBBBB</p>
+    <p id="3">XXXXXXXXXXXXXX</p>
+    <p id="4">CCCCCCCCCCCCCC</p>
+    <p id="5">DDDDDDDDDDDDDD</p>
+
+    <p id="xy"></p>
+</body>
+</html>
