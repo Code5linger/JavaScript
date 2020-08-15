@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This-2nd-test</title>
+
+    <style>
+        body{
+                margin: 2%;
+                border: 1px solid black;
+                background-color: #b3b3b3;
+        }
+        #message{
+            line-height:100px;
+            text-align:center;
+                width: 575px;
+            height: 100px;
+                border:5px solid black;
+                margin:0 auto;
+            margin-bottom:10px;
+            background-color: #8e68ff;
+            font-size: 150%;
+        }
+        .preview{
+                width:10%;
+                margin-left:17%;
+            border: 10px solid black;
+        }
+        img{
+                width:300px;
+                height:200px;
+                border:2.5px solid black;
+        }
+    </style>
+
+    <script>
+        function showProperties(element){
+            document.getElementById('message').innerHTML = element.alt;
+                }
+
+        function displayId(element){
+            console.log(element.id);
+            }
+            
+    </script>
+</head>
+<body>
+    <div id="message">Hover over an image to display the alt text</div>
+
+    <img 
+    src="https://image.shutterstock.com/image-photo/beautiful-latin-woman-blue-bikini-600w-1062047588.jpg" 
+    alt="Beautiful latin woman in blue bikini" 
+    id = "Id1"
+    onmouseover = "showProperties(this)" 
+    onmouseleave = "document.getElementById('message').innerHTML = 'Hover over an image';"
+    onclick="document.getElementById('Id1').
+    src='https://image.shutterstock.com/image-photo/woman-bikini-260nw-401568913.jpg'">
+
+    <img src="https://image.shutterstock.com/image-photo/beautiful-girl-white-fabric-walking-600w-1062047579.jpg" 
+    alt="Beautiful girl with white fabric walking on the beach"
+    id = "Id2"
+    onmouseover = "showProperties(this)"
+    onmouseleave = "document.getElementById('message').innerHTML = 'Hover over an image';"
+    onclick="document.getElementById('Id2').
+    src='https://image.shutterstock.com/image-photo/woman-bikini-260nw-401568913.jpg'">
+
+    <img src="https://image.shutterstock.com/image-photo/beautiful-young-woman-running-on-600w-1042026859.jpg" 
+    alt="Beautiful young woman running on the beach with a yellow tissue"
+    id = "Id3"
+    onmouseover="showProperties(this)"
+    onmouseleave = "document.getElementById('message').innerHTML = 'Hover over an image';"
+    onclick="document.getElementById('Id3').
+    src='https://image.shutterstock.com/image-photo/woman-bikini-260nw-401568913.jpg'">
+
+    <img src="https://image.shutterstock.com/image-photo/young-woman-bikini-holding-yellow-600w-1049320118.jpg" 
+    alt="Young woman in bikini holding a yellow scarf on windy beach"
+    id = "Id4"
+    onmouseover="showProperties(this)"
+    onmouseleave = "document.getElementById('message').innerHTML = 'Hover over an image';"
+    onclick="document.getElementById('Id4').
+    src='https://image.shutterstock.com/image-photo/woman-bikini-260nw-401568913.jpg'">
+
+</body>
+</html>
