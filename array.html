@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="loadFruits()">
+    <!--
+        Declaring array
+            Numbers 
+                var grades = [40,44,45,64,54];
+            Foods
+                var foods = ['banana','apple','pizza'];
+            Images
+                var images = document.getElementByClassName['imgs'];
+            List Items
+                var listitems = document.getElementByTagName['li'];
+            
+            Attributes & Methods
+                grades.length       
+                grades.sort()
+                grades.push(element)
+                    grades[grades.length] = element
+    -->
+
+    <button onclick="myFunction()">Add your favorite</button>
+
+    <p id="fruits"></p>
+
+    <script>
+        var fruits = ["Banana","Apple","Orange","Grape","Mango"];
+
+        function loadFruits(){
+            document.getElementById("fruits").innerHTML = fruits;
+        }
+
+        function myFunction(){
+            var fruit = prompt("what is tiyr favorite fruit?");
+            fruits[fruits.length] = fruit;
+            document.getElementById("fruits").innerHTML = fruits;
+        }
+    </script>
+</body>
+</html>

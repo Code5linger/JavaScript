@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array 2</title>
+</head>
+
+<body onload="name()">
+
+    <button onclick="myFunction()">Add a Name</button>
+
+    <p id = "nam"></p>
+
+    <script>
+        var nam = ["aaa","bbb","cccc","ddddd","eeee","fffff"];
+
+        function name(){
+            document.getElementById("nam").innerHTML = nam;
+        }
+
+        function myFunction(){
+            var nam = prompt("Number Please ");
+            nam[nam.length] = nam;
+            document.getElementById("nam").innerHTML = nam;
+        }
+
+    </script>
+</body>
+</html>
