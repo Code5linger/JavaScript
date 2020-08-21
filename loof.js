@@ -93,4 +93,58 @@ else{
     document.write("X");
 }
 */
+/*
+var name = prompt("What's your name ma dude ?");
 
+if (name.lenght != 10){
+    if (name == "Colleen")
+        document.write("Noice");
+    else
+        document.write("Hello " + name);
+}
+else{
+    document.write("Need a name, may man");
+}
+*/
+/*
+var av4 = [8, ,1, ,2, ,5,8,8, ,1, ,2, ,5,8,9];
+
+var sum = 0;
+var count = 0;
+
+if(av4.length > 0){
+    for (index = 0; index < av4.length; index++){
+        if(av4[index] != undefined){
+            sum += av4[index];
+            count = count + 1;
+        }
+    }
+    document.write(sum/count);
+}
+*/
+/*
+var name = prompt("What's your name ma dude ?");
+
+if (name.length != 0){
+    if (name == "Colleen")
+        document.write("Noice");
+    else{
+        document.write("Hello " + name);
+    }
+}
+else{
+    document.write("Need a name, may man");
+}
+*/
+/*
+var name = prompt("Name");
+
+if (name.length != 0 && name == "col")
+    document.write("Nice");
+
+    if (name.length != 0 && name != "Col")
+    document.write("Hello " + name);
+
+else (name.length == 0)
+    document.write("Shy");
+*/
