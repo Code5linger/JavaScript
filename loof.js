@@ -9,7 +9,7 @@ for (index = 0; index < grades.length; index++){
 document.write(sum);
 console.log(sum/grades.length);
 */
-
+/*
 var avg = [1,2,5,8,1,2,5,8,1,2,5,8,1,2,5,8,1,2,5,8,1,2,5,8];
 
 document.write(avg + "<br>");
@@ -22,3 +22,75 @@ for (index = 0; index < avg.length; index++){
 document.write(sum + "<br>");
 
 document.write(sum/avg.length);
+*/
+/*
+var name = prompt("Enter Name?")
+
+if (name.length != 0){
+    document.write("Hello " + name)
+    console.log(name)
+}
+
+else{
+    document.write("Meh")
+}
+*/
+/*
+var avg2 = [8,1,2,5,8];
+
+var sum = 0;
+if(avg2.length > 0){
+    for (index = 0; index < avg2.length; index++){
+        sum += avg2[index];
+    }
+
+document.write(sum/avg2.length);
+
+}
+
+else{
+    document.write("Need More Grade");
+}
+*/
+/*
+var avg2 = [8, ,1, ,2, ,5,8];
+
+var sum = 0;
+var count = 0;
+if(avg2.length > 0){
+    for (index = 0; index < avg2.length; index++){
+        if(avg2[index] != undefined){
+            sum += avg2[index];
+        count = count +1;
+        }
+    }
+
+document.write(sum/count);
+
+}
+
+else{
+    document.write("Need More Grade");
+}
+*/
+/*
+var avg3 = [8, ,1, ,2, ,5,8,8, ,1, ,2, ,5,8,9];
+
+var sum = 0;
+var count = 0;
+
+if(avg3.length > 0){
+    for (index = 0; index < avg3.length; index++){
+        if(avg3[index] != undefined){
+            sum += avg3[index];
+        count = count + 1;
+        }
+    }
+    document.write(sum/count);
+}
+
+else{
+    document.write("X");
+}
+*/
+
