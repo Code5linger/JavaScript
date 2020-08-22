@@ -148,3 +148,4 @@ if (name.length != 0 && name == "col")
 else (name.length == 0)
     document.write("Shy");
 */
+document.getElementById("second").innerHTML = "What does the Fox say?"
