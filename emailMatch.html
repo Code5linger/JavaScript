@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/forms.js"></script>
+</head>
+<body>
+    <form>
+        <label for="">
+            Email Address:
+            <input type="email" name="email" id="email_1"  required>
+        </label><br>
+        <label for="">
+            Repeat Email Address:
+            <input type="email" name="emai2" id="email_2" required onchange="return check()">
+        </label>
+
+        <input type="submit" value="Confirm Emails" onclick="return check();">
+    </form>
+</body>
+</html>
