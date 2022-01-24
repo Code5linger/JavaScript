@@ -6,3 +6,7 @@ function Prompt() {
   }
   document.getElementById("name").innerHTML = txt;
 }
+
+function MyFunction() {
+  
+}
