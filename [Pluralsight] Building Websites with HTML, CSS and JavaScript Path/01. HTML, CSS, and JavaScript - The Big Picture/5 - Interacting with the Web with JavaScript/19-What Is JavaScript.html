@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script>
+      function DateTime() {
+        document.getElementById("demo").innerHTML = Date();
+      }
+    </script>
   </head>
   <body>
+    <!--
     <button
       type="button"
       onclick='document.getElementById("demo").innerHTML = Date()'
@@ -14,5 +20,9 @@
       Show me the date
     </button>
     <p id="demo"></p>
+    -->
+    <button type="button" onclick="DateTime()">
+      <p id="demo">Date & Time</p>
+    </button>
   </body>
 </html>
