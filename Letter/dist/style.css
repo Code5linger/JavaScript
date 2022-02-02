@@ -1,11 +1,15 @@
 body {
-  font-family: "Alegreya", serif;
-  background: linear-gradient(to left, #ffe1d1, #ffdbca);
-  /*
-  background: linear-gradient(180deg, #ffe1d1 0%, #ffdbca 100%);
-  */
+  font-family: Alegreya, serif;
 }
 
+/* CSS best practices 
+
+    Box (position, display, width, margin, etc.)
+    Text
+    Background
+    Border
+    Other (Alphabetically)
+*/
 .header {
   display: grid;
   grid-template-columns: 20% 1fr;

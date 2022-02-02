@@ -1,17 +1,27 @@
 $color-1: #ffe1d1;
 $color-2: #ffdbca;
 
+// :root {
+//     /* BASE COLORS */
+//     --color-1:  #ffe1d1;
+//     --color-2: #ffdbca;
+// }
+
 body {
-  font-family: "Alegreya", serif;
-
-  background: linear-gradient(to left, $color-1, $color-2);
-
-  /*
-  background: linear-gradient(180deg, #ffe1d1 0%, #ffdbca 100%);
-  */
+  font-family: Alegreya, serif;
 }
+/* CSS best practices 
 
+    Box (position, display, width, margin, etc.)
+    Text
+    Background
+    Border
+    Other (Alphabetically)
+*/
+
+//Header
 .header {
+  //setting up first grid.
   display: grid;
   grid-template-columns: 20% 1fr;
   align-content: center;
@@ -30,6 +40,7 @@ body {
 }
 
 .menu {
+  // setting up flexbox for menu
   display: flex;
   justify-content: flex-end;
   align-items: center;
