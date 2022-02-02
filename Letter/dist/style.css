@@ -1,6 +1,5 @@
 body {
   font-family: Alegreya, serif;
-  overflow-x: hidden;
 }
 
 /* CSS best practices 
@@ -66,6 +65,8 @@ body {
   height: auto;
   justify-self: end;
   align-self: end;
+  position: absolute;
+  bottom: -350px;
 }
 
 #wave1,
@@ -118,4 +119,21 @@ body {
   font-size: 20px;
   color: #333333;
   margin-bottom: 2rem;
+}
+
+.cta_btn {
+  width: 200px;
+  height: 44px;
+  position: absolute;
+  bottom: -23px;
+  cursor: pointer;
+  background: #333333;
+  box-shadow: rgba(255, 163, 148, 0.1) 0px 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: Alegreya;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
 }
