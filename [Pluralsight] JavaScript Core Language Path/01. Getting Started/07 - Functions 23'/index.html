@@ -18,14 +18,30 @@
       /*
       function logMessage() {
         console.log("Console>");
-      } 
+      }
       */
-
+      /*
       let func = function loggingFunction(message, firstName) {
         console.log(message);
         console.log(firstName);
       };
       func("Hello", "Copa");
+      */
+      let key = 42;
+
+      function code(value) {
+        let keyGenerate = function () {
+          let key = 12;
+          console.log("inScope ", key);
+          return key;
+        };
+        let code = value * key;
+        return code;
+      }
+
+      let secretCode = code(3);
+      console.log(secretCode);
+      //console.log(code);
     </script>
   </body>
 </html>
