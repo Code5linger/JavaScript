@@ -8,6 +8,26 @@
   </head>
   <body>
     <script>
+      function priceWithMonthlyDiscount(ratePerHour, numDays, discount) {
+        let fullMonths = numDays - Math.ceil(numDays % 22);
+        let fullDays = numDays - Math.ceil(numDays / 22);
+        return (
+          fullMonths * (ratePerHour * 8) * discount +
+          fullDays * (ratePerHour * 8)
+        );
+      }
+
+      console.log(priceWithMonthlyDiscount(89, 230, 0.42));
+      // => 97972
+
+      979+
+      890+
+      function months(days) {
+        let work = days - Math.ceil(days / 22);
+        return work;
+      }
+      console.log(months(230));
+
       let mySymbol = Symbol();
 
       let person = {
