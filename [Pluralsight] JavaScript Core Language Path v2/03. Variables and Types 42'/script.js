@@ -1,7 +1,7 @@
-let welcome = "Welcome!",
-  price = 49.99,
+const welcome = "Welcome!",
+  price = 59.99,
   discount = false;
 
-console.log(welcome);
+let let69 = 69;
+
 console.log(price);
-console.log(discount);
