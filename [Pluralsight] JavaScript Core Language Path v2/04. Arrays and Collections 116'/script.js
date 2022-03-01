@@ -13,7 +13,19 @@ let x = 10;
 console.log(amount);
 console.log(x);
 */
+/*
 let name = "Copa";
-let text = `Hello ${name}`;
+name = name.substring(1);
+let lName = "Samsu";
+name = name.toLowerCase();
+lName = lName.toLowerCase();
+let text = `Hello ${name}` + ` ${lName}`;
 
 console.log(text);
+*/
+
+let amount = "127.6999465464654654";
+amount = Number.parseFloat(amount);
+
+console.log(typeof amount);
+console.log(amount);
