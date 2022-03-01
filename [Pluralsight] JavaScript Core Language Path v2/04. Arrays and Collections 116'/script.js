@@ -36,7 +36,15 @@ saved = !saved;
 console.log(typeof saved);
 console.log(saved);
 */
+/*
 let saved = 10;
 saved = null;
 
 console.log(saved);
+*/
+let person = {
+  firstName: "Copa",
+  lastName: "Samsu",
+};
+console.log(person.firstName);
+console.log(typeof person);
