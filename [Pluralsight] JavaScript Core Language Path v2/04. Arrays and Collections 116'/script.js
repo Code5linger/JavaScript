@@ -36,3 +36,7 @@ saved = !saved;
 console.log(typeof saved);
 console.log(saved);
 */
+let saved = 10;
+saved = null;
+
+console.log(saved);
