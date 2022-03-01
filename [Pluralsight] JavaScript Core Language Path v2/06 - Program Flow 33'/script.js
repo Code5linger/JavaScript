@@ -64,6 +64,20 @@ if (true) {
 }
 console.log(test);
 */
+/*
 for (let i = 0; i <= 7; i++) {
   console.log(i);
 }
+*/
+/*
+let count = 1;
+while (count > 5) {
+  console.log(count);
+  count--;
+}
+*/
+let count = 4;
+do {
+  console.log(count);
+  count--;
+} while (count > 0);
