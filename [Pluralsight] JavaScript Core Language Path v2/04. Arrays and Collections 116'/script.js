@@ -23,9 +23,16 @@ let text = `Hello ${name}` + ` ${lName}`;
 
 console.log(text);
 */
-
+/*
 let amount = "127.6999465464654654";
 amount = Number.parseFloat(amount);
 
 console.log(typeof amount);
 console.log(amount);
+*/
+/*
+let saved = false;
+saved = !saved;
+console.log(typeof saved);
+console.log(saved);
+*/
