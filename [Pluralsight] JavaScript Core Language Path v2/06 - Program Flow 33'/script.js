@@ -43,3 +43,22 @@ if (price > 10) {
   console.log("less than 5");
 }
 */
+/*
+if (1 !== 1) {
+  console.log("true");
+} else {
+  console.log("object");
+}
+*/
+/*
+let price = 5;
+price > 10 ? console.log("yes") : console.log("no");
+
+let a = 70;
+a > 10 ? console.log("yes") : console.log("object");
+*/
+if (true) {
+  let test = "test";
+  console.log(test);
+}
+console.log(test);
