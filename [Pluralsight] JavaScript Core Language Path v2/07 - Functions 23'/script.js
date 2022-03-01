@@ -20,6 +20,7 @@ function myConsole(message, another) {
 myConsole("1st", "A");
 myConsole("2nd", "B");
 */
+/*
 let key = 42;
 
 function cipher(value) {
@@ -36,3 +37,4 @@ function cipher(value) {
 
 console.log(cipher(1));
 console.log(cipher(key));
+*/
