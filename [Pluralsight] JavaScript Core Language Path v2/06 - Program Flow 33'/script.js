@@ -57,8 +57,13 @@ price > 10 ? console.log("yes") : console.log("no");
 let a = 70;
 a > 10 ? console.log("yes") : console.log("object");
 */
+/*
 if (true) {
   let test = "test";
   console.log(test);
 }
 console.log(test);
+*/
+for (let i = 0; i <= 7; i++) {
+  console.log(i);
+}
