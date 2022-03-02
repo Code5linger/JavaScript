@@ -1,3 +1,4 @@
+/*
 let person = {
   name: "Copa",
   age: 27,
@@ -8,7 +9,7 @@ let person = {
 };
 
 console.log(person.showInfo(69));
-
+*/
 /*
 const person = {
   firstName: "John",
@@ -20,3 +21,27 @@ const person = {
 };
 console.log(person.fullName());
 */
+/*
+let message = "Hello";
+
+function changeMessage(message) {
+  message = "Yoyoyo!";
+}
+
+console.log(changeMessage(message));
+
+console.log(message);
+*/
+
+let person = {
+  name: "Jhon",
+  age: 32,
+  job: false,
+};
+
+function incrementAge(person) {
+  person.age++;
+}
+
+console.log(person.age);
+console.log(incrementAge(person));
