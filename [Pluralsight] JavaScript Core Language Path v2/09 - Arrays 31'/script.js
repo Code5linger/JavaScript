@@ -22,7 +22,11 @@ const values = ["a", "b", "c"];
 const newValues = values.slice(1, 2);
 console.log(newValues);
 */
+/*
 const values = ["a", "b", "c"];
 const newValues = values.slice(1, 4);
 
 console.log(newValues);
+*/
+let id = 123;
+
