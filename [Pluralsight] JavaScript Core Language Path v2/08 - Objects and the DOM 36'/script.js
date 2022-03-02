@@ -32,7 +32,7 @@ console.log(changeMessage(message));
 
 console.log(message);
 */
-
+/*
 let person = {
   name: "Jhon",
   age: 32,
@@ -40,8 +40,35 @@ let person = {
 };
 
 function incrementAge(person) {
-  person.age++;
+  return person.age++;
 }
 
-console.log(person.age);
 console.log(incrementAge(person));
+console.log(person.age);
+*/
+/*
+let now = new Date();
+console.log(now.toDateString());
+
+console.log(Math.abs(-42));
+*/
+/*
+function showMessage(message) {
+  document.getElementById("message").textContent = message;
+}
+
+console.log(message);
+*/
+
+const header = document.getElementById("message");
+
+header.style.color = "#105679";
+header.style.fontWeight = "100";
+
+const button = document.getElementById("btn");
+
+button.addEventListener("click", function () {
+  console.log("Click!");
+});
+
+console.log("Test");
