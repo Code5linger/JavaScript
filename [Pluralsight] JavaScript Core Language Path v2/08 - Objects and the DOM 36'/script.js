@@ -1,12 +1,22 @@
-let mySymbol = Symbol();
-
 let person = {
   name: "Copa",
   age: 27,
   job: false,
-  [mySymbol]: "Password🔐",
+  showInfo: function (realAge) {
+    return this.name + " is " + realAge;
+  },
 };
 
-person["age"] = 37;
-console.log(person.age);
-console.log(person.mySymbol);
+console.log(person.showInfo(69));
+
+/*
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  },
+};
+console.log(person.fullName());
+*/
