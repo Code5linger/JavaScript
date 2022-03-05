@@ -1,3 +1,4 @@
+/*
 let productId = 12345;
 
 function test() {
@@ -19,3 +20,15 @@ function alpha() {
 }
 
 alpha();
+*/
+/*
+id = 456;
+
+console.log(id);
+
+let id = 789;
+*/
+"use strict";
+let id = 222;
+
+console.log(id);
