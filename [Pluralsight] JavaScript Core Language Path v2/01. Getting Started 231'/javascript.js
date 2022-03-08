@@ -1,2 +1,4 @@
-alert("JavaScript Did This!");
+/*
 console.log("Hello!");
+alert("JavaScript Did This!");
+*/
