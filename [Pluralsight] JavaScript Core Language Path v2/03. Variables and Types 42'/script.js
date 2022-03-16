@@ -1,1 +1,3 @@
-let total = 149.99;
+let empty;
+
+console.log(empty);
