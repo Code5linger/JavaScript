@@ -1,3 +1,3 @@
-let message = "Hello \\World!";
+let message = "Hello \nWorld!";
 
 console.log(message);
