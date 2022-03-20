@@ -1,3 +1,6 @@
-let saved = 69;
-saved = null;
-console.log(saved);
+let person = {
+  fname: "Copa",
+  lname: "Samsu",
+};
+
+console.log(person.fname);
