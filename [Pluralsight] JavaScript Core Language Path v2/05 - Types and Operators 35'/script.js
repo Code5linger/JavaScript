@@ -1,3 +1,3 @@
-let price = 20 - -2;
+let message = "Hello \\World!";
 
-console.log(--price);
+console.log(message);
