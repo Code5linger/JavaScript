@@ -1,4 +1,3 @@
-let fname = "CodeSlinger";
-let message = `Hello! ${fname}`;
-
+let message = "Hello";
+message = message.length;
 console.log(message);
