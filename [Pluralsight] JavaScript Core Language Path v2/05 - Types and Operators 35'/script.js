@@ -1,4 +1,3 @@
-let saved = false;
-saved = !saved;
+let saved = 69;
+saved = null;
 console.log(saved);
- 
