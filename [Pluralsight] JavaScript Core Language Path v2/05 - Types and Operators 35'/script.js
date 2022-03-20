@@ -1,5 +1,2 @@
-let price = 3 + 2 * 2;
-console.log(price); //7
-
-let price2 = (3 + 2) * 2;
-console.log(price2); //10
+let price = 1.1 + 1.3;
+console.log(price); //2.4000000000000004
