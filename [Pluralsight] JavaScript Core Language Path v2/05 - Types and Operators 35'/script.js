@@ -1,3 +1,3 @@
-let message = "Hello \nWorld!";
+let message = "Hello 'World'!";
 
 console.log(message);
