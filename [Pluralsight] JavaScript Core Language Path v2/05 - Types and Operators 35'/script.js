@@ -1,3 +1,4 @@
-let total = Number.parseInt("123.12");
-
-console.log(total);
+let saved = false;
+saved = !saved;
+console.log(saved);
+ 
