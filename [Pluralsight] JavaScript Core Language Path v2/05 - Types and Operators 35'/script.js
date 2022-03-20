@@ -1,3 +1,4 @@
-let message = "Hello";
-message = message.length;
-console.log(message);
+let saved = false;
+saved = !saved;
+console.log(saved);
+ 
