@@ -1,3 +1,3 @@
-let message = "Hello";
-message = message.length;
-console.log(message);
+let total = Number.parseInt("123.12");
+
+console.log(total);
