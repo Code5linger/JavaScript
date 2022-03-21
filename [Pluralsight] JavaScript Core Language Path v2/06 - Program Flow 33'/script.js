@@ -1,4 +1,3 @@
-let price = 20;
-if (price > 15) {
-  console.log("Discounted");
+if (+(1.1 + 1.3).toFixed(2) === 2.4) {
+  console.log("true");
 }
