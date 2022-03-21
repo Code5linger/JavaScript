@@ -1,6 +1,14 @@
-let score = 60;
+if (1 !== "1") {
+  //false
+  console.log(true);
+} else {
+  console.log(false);
+}
 
-if (score > 80) console.log("A+");
-else if (score >= 70) console.log("A");
-else if (score >= 60) console.log("A-");
-else console.log("Fail");
+if (1 != "1") {
+  //true //JS converts types, in this case 1 to sting '1'
+  //false
+  console.log(true);
+} else {
+  console.log(false);
+}
