@@ -1,6 +1,3 @@
-if (true) {
-  const value = "yes";
-  console.log(value + " Inside");
+for (let i = 0; i < 5; i++) {
+  console.log(i);
 }
-
-console.log(value + " Outside");
