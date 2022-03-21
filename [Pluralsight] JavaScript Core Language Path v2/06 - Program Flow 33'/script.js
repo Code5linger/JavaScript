@@ -1,14 +1,5 @@
-if (1 !== "1") {
-  //false
-  console.log(true);
-} else {
-  console.log(false);
-}
+let price = 2;
 
-if (1 != "1") {
-  //true //JS converts types, in this case 1 to sting '1'
-  //false
-  console.log(true);
-} else {
-  console.log(false);
-}
+let checkout = price < 10 ? "Expensive" : "Cheap";
+
+console.log(checkout);
