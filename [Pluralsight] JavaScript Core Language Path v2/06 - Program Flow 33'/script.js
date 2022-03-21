@@ -1,5 +1,6 @@
-let price = 2;
+if (true) {
+  const value = "yes";
+  console.log(value + " Inside");
+}
 
-let checkout = price < 10 ? "Expensive" : "Cheap";
-
-console.log(checkout);
+console.log(value + " Outside");
