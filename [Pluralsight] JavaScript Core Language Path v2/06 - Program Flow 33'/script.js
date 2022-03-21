@@ -1,8 +1,4 @@
-let county = "BD";
-let love = 70;
-
-if (county !== "BD") {
-  love = 100;
+let price = 20;
+if (price > 15) {
+  console.log("Discounted");
 }
-
-console.log(love);
