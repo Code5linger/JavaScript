@@ -1,11 +1,8 @@
-if (5 === 5) {
-  console.log("Yes");
+let county = "BD";
+let love = 70;
+
+if (county !== "BD") {
+  love = 100;
 }
 
-if (5 > 10) {
-  console.log("No");
-}
-
-if (5 >= 5) {
-  console.log("Yes");
-}
+console.log(love);
