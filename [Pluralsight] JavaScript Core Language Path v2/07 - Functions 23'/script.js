@@ -1,6 +1,13 @@
 key = 42;
+
 function getCode(value) {
-  let code = value * key;
+  let keyGen = function () {
+    let key = 12;
+    console.log("In KeyGen: ", key);
+    return key;
+  };
+  let code = value * keyGen();
+  console.log("in getCode: ", key);
   return code;
 }
 
