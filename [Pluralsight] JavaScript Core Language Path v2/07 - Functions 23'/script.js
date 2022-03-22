@@ -1,6 +1,6 @@
-let myFunction = function showMessage() {
-  console.log("Hello World!");
-};
+function showMessage(message, anotherMessage) {
+  console.log(message, anotherMessage);
+}
 
-myFunction();
-showMessage();
+showMessage("Anime", "Tv");
+showMessage("Games");
