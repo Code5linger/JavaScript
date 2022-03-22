@@ -1,6 +1,6 @@
-if (1.1 + 1.3 !== 2.4) {
-  console.log("True");
-}
+let count = 5;
 
-console.log(1.1 + 1.3);
-
+do {
+  console.log(count);
+  count--;
+} while (count >= 0);
