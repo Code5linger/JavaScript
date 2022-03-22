@@ -1,7 +1,7 @@
 let district = "Dhaka";
 let tax = 7;
 
-if (district === "XDhaka") {
+if (1 !== 2) {
   tax = 0;
 }
 
