@@ -1,5 +1,6 @@
-let i = 4;
-do {
-  console.log(i);
-  i--;
-} while (i > 0);
+if (1.1 + 1.3 !== 2.4) {
+  console.log("True");
+}
+
+console.log(1.1 + 1.3);
+
