@@ -1,5 +1,6 @@
 let count = 5;
-while (count >= 1) {
+
+do {
   console.log(count);
   count--;
-}
+} while (count >= 0);
