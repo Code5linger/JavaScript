@@ -1,8 +1,6 @@
-let district = "Dhaka";
-let tax = 7;
-
-if (1 !== 2) {
-  tax = 0;
+if (1.1 + 1.3 !== 2.4) {
+  console.log("True");
 }
 
-console.log(tax);
+console.log(1.1 + 1.3);
+
