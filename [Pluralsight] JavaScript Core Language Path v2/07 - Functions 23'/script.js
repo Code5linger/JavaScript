@@ -1,4 +1,7 @@
+key = 42;
 function getCode(value) {
-  return value * 42;
+  let code = value * key;
+  return code;
 }
+
 console.log(getCode(5));
