@@ -1,3 +1,5 @@
-for (let i = 0; i <= 5; i++) {
-  console.log(i);
+let count = 5;
+while (count >= 1) {
+  console.log(count);
+  count--;
 }
