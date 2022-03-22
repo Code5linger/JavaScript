@@ -1,40 +1,14 @@
-/*
-function logT() {
-  console.log("Func");
-}
+key = 42;
 
-logT();
-*/
-/*
-let myFunction = function logT() {
-  console.log("Func");
-};
-
-myFunction();
-*/
-/*
-function myConsole(message, another) {
-  console.log(message + " From Function " + another);
-}
-
-myConsole("1st", "A");
-myConsole("2nd", "B");
-*/
-/*
-let key = 42;
-
-function cipher(value) {
-  let keyFunc = function () {
+function getCode(value) {
+  let keyGen = function () {
     let key = 12;
-    console.log("in KeyFunc: " + key);
+    console.log("In KeyGen: ", key);
     return key;
   };
-
-  let code = value * keyFunc();
-  console.log("in " + key);
+  let code = value * keyGen();
+  console.log("in getCode: ", key);
   return code;
 }
 
-console.log(cipher(1));
-console.log(cipher(key));
-*/
+console.log(getCode(5));
