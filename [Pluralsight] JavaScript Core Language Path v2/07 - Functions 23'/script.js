@@ -1,6 +1,4 @@
-function showMessage(message, anotherMessage) {
-  console.log(message, anotherMessage);
+function getCode(value) {
+  return value * 42;
 }
-
-showMessage("Anime", "Tv");
-showMessage("Games");
+console.log(getCode(5));
