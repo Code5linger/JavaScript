@@ -1,5 +1,6 @@
-if (+(1.1 + 1.3).toFixed(2) === 2.4) {
-  console.log("True");
-}
+let score = 80;
 
-console.log(1.1 + 1.3);
+if (score >= 80) console.log("A+");
+else if (score >= 70) console.log("A");
+else if (score >= 60) console.log("A-");
+else console.log("Fail");
