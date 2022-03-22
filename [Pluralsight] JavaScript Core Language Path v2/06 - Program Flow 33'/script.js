@@ -1,11 +1,8 @@
-if (5 === 5) {
-  console.log("Yes"); // true
+let district = "Dhaka";
+let tax = 7;
+
+if (district === "XDhaka") {
+  tax = 0;
 }
 
-if (5 > 10) {
-  console.log("No"); //false
-}
-
-if (5 >= 5) {
-  console.log("Yes");
-}
+console.log(tax);
