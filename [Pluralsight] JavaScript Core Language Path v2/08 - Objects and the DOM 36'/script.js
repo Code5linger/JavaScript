@@ -16,3 +16,4 @@ console.log(person.age);
 console.log(person.job);
 console.log(person.country);
 console.log(person.mySymbol);
+ 
