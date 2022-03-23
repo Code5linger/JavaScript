@@ -1,19 +1,10 @@
-let mySymbol = Symbol();
-
 let person = {
-  name: "Jon",
+  name: "Copa",
   age: 32,
   job: true,
-  [mySymbol]: "Secret",
+  showInfo: function (realAge) {
+    console.log("Inside");
+    let showMessage = console.log(this.name + " Samsu is " + realAge);
+  },
 };
-
-//person.name = "Copa";
-person["name"] = "Samsu";
-
-console.log(person);
-console.log(person.name);
-console.log(person.age);
-console.log(person.job);
-console.log(person.country);
-console.log(person.mySymbol);
- 
+person.showInfo(69);
