@@ -1,3 +1,4 @@
+/*
 let mySymbol = Symbol();
 
 let person = {
@@ -28,3 +29,14 @@ console.log(person.name);
 
 person.myMethod();
 person.testMethod();
+*/
+
+let person = {
+  name: "Code",
+  age: 26,
+  myMethod: function (realAge) {
+    console.log(this.name + " is " + realAge);
+  },
+};
+
+person.myMethod(69);
