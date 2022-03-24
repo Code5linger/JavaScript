@@ -1,10 +1,30 @@
+let mySymbol = Symbol();
+
 let person = {
   name: "Copa",
-  age: 32,
+  age: 26,
   job: true,
-  showInfo: function () {
+  [mySymbol]: "Secret",
+  myMethod: function () {
+    console.log("Method!");
+  },
+  testMethod: function () {
     console.log(this.name);
   },
 };
 
-person.showInfo();
+console.log(person);
+console.log(person.name);
+console.log(person.job);
+console.log(person.age);
+console.log(person.wife);
+console.log(person.mySymbol);
+
+person.name = "Samsu";
+console.log(person.name);
+
+person["name"] = "Code";
+console.log(person.name);
+
+person.myMethod();
+person.testMethod();
