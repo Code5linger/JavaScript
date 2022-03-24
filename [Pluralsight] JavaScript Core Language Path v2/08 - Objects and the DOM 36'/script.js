@@ -9,7 +9,7 @@ let person = {
     console.log("Method!");
   },
   testMethod: function () {
-    console.log(this.name);
+    console.log(this.name + " is " + this.age);
   },
 };
 
