@@ -108,5 +108,10 @@ let now = new Date();
 
 console.log(now.toDateString());
 */
-
+/*
 console.log(Math.abs(-42));
+*/
+/*
+let s = "Hello";
+console.log(s.charAt(0));
+*/
