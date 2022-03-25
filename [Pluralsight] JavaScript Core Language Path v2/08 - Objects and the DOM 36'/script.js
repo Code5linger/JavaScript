@@ -120,6 +120,7 @@ const header = document.getElementById("demo");
 
 header.style.fontWeight = "800";
 */
+/*
 const button = document.getElementById("see-review");
 
 button.addEventListener("click", function () {
@@ -133,4 +134,9 @@ button.addEventListener("click", function () {
     button.textContent = "SEE REVIEW";
   }
 });
+*/
+function test() {
+  document.getElementById("demo").innerHTML = "TestX0";
+}
 
+test();
