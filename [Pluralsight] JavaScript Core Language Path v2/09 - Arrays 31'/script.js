@@ -28,5 +28,7 @@ const newValues = values.slice(1, 4);
 
 console.log(newValues);
 */
+/*
 let id = 123;
-
+*/
+let values = [1, 2, 3];
