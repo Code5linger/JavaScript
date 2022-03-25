@@ -93,7 +93,9 @@ const found = values.find(function (item) {
 
 console.log(found);
 */
+/*
 const values = ["a", "b", "c", "d"];
 values.forEach(function (item) {
   console.log("item: ", item);
 });
+*/
