@@ -42,6 +42,7 @@ let person = {
 person.myMethod(69);
 */
 //video 4
+/*
 let mySymbol = Symbol();
 
 let person = {
@@ -73,3 +74,28 @@ console.log(person.mySymbol);
 console.log(person.myMethod()[0]);
 console.log(person.myMethod()[1]);
 console.log(person.myMethod(69)[2]);
+*/
+
+let age = 26;
+
+function changedAge(age) {
+  return ++age;
+}
+
+console.log(changedAge(age)); //69
+console.log(age); //26
+
+/*
+let person = {
+  name: "Code",
+  age: 26,
+  job: true,
+};
+
+function incAge(person) {
+  return ++person.age;
+}
+
+console.log(incAge(person));
+console.log(person.age);
+*/
