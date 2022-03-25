@@ -56,7 +56,15 @@ let dropped = values.shift();
 
 console.log(dropped);
 */
+/*
 const values = ["b", "c", "d"];
 values.unshift("a");
 
+console.log(values);
+*/
+
+const values = ["a", "b", "c", "d"];
+const newValues = values.slice(1, 3);
+
+console.log(newValues);
 console.log(values);
