@@ -82,7 +82,7 @@ function changedAge(age) {
   return ++age;
 }
 
-console.log(changedAge(age)); //69
+console.log(changedAge(age)); //27
 console.log(age); //26
 
 /*
