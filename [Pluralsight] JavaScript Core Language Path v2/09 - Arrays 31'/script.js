@@ -34,8 +34,6 @@ let id = 123;
 /*
 let values = [1, 2, 3];
 */
-
 let values = Array.of(1, 2, 3);
-console.log(Array.isArray(values));
-
-console.log(values.length);
+values[1] = 69;
+console.log(values[1]);
