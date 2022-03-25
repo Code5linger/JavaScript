@@ -36,4 +36,6 @@ let values = [1, 2, 3];
 */
 
 let values = Array.of(1, 2, 3);
-console.log(typeof values);
+console.log(Array.isArray(values));
+
+console.log(values.length);
