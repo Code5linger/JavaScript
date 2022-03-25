@@ -108,3 +108,5 @@ let now = new Date();
 
 console.log(now.toDateString());
 */
+
+console.log(Math.abs(-42));
