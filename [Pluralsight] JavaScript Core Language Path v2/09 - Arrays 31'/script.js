@@ -74,5 +74,14 @@ const values = ["a", "b", "c", "d"];
 values.splice(1, 2, "copa");
 console.log(values);
 */
+/*
 const values = ["a", "b", "c", "d"];
 console.log(values.indexOf("x"));
+*/
+/*
+const values = ["a", "b", "c", "d"];
+const set = values.filter(function (item) {
+  return item > "b";
+});
+console.log(set);
+*/
