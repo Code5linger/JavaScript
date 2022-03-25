@@ -85,11 +85,14 @@ function changedAge(age) {
 console.log(changedAge(age)); //27
 console.log(age); //26
 */
+/*
+let mySymbol = Symbol();
 
 let person = {
   name: "Code",
   age: 26,
   job: true,
+  [mySymbol]: "Secret",
 };
 
 function incAge(person) {
@@ -98,3 +101,10 @@ function incAge(person) {
 
 console.log(incAge(person)); //27
 console.log(person.age); //27
+console.log(person.mySymbol);
+*/
+/*
+let now = new Date();
+
+console.log(now.toDateString());
+*/
