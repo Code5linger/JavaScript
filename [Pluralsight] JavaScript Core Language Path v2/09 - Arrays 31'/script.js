@@ -45,6 +45,12 @@ values.push("d");
 
 console.log(values);
 */
+/*
 const values = ["a", "b", "c", "d"];
 let dropped = values.pop();
+console.log(dropped);
+*/
+const values = ["a", "b", "c", "d"];
+let dropped = values.shift();
+
 console.log(dropped);
