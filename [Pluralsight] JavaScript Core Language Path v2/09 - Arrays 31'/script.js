@@ -39,7 +39,12 @@ let values = Array.of(1, 2, 3);
 values[1] = 69;
 console.log(values[1]);
 */
+/*
 const values = ["a", "b", "c"];
 values.push("d");
 
 console.log(values);
+*/
+const values = ["a", "b", "c", "d"];
+let dropped = values.pop();
+console.log(dropped);
