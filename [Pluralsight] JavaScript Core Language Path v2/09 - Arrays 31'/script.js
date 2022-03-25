@@ -62,9 +62,13 @@ values.unshift("a");
 
 console.log(values);
 */
-
+/*
 const values = ["a", "b", "c", "d"];
 const newValues = values.slice(1, 3);
 
 console.log(newValues);
+console.log(values);
+*/
+const values = ["a", "b", "c", "d"];
+values.splice(1, 2);
 console.log(values);
