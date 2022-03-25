@@ -115,3 +115,7 @@ console.log(Math.abs(-42));
 let s = "Hello";
 console.log(s.charAt(0));
 */
+
+const header = document.getElementById("demo");
+
+header.style.fontWeight = "800";
