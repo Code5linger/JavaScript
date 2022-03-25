@@ -85,3 +85,9 @@ const set = values.filter(function (item) {
 });
 console.log(set);
 */
+const values = ["a", "bb", "c", "dddd"];
+const found = values.find(function (item) {
+  return item.length >= 2;
+});
+
+console.log(found);
