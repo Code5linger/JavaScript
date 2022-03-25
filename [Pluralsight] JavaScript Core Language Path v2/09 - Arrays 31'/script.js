@@ -34,6 +34,12 @@ let id = 123;
 /*
 let values = [1, 2, 3];
 */
+/*
 let values = Array.of(1, 2, 3);
 values[1] = 69;
 console.log(values[1]);
+*/
+const values = ["a", "b", "c"];
+values.push("d");
+
+console.log(values);
