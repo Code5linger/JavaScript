@@ -115,3 +115,13 @@ console.log(Math.abs(-42));
 let s = "Hello";
 console.log(s.charAt(0));
 */
+/*
+const header = document.getElementById("demo");
+
+header.style.fontWeight = "800";
+*/
+const button = document.getElementById("see-review");
+
+button.addEventListener("click", function () {
+  console.log("Click!");
+});
