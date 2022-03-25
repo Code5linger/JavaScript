@@ -31,4 +31,9 @@ console.log(newValues);
 /*
 let id = 123;
 */
+/*
 let values = [1, 2, 3];
+*/
+
+let values = Array.of(1, 2, 3);
+console.log(typeof values);
