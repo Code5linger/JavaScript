@@ -50,7 +50,13 @@ const values = ["a", "b", "c", "d"];
 let dropped = values.pop();
 console.log(dropped);
 */
+/*
 const values = ["a", "b", "c", "d"];
 let dropped = values.shift();
 
 console.log(dropped);
+*/
+const values = ["b", "c", "d"];
+values.unshift("a");
+
+console.log(values);
