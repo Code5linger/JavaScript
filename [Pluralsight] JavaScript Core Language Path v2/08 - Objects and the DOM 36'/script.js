@@ -75,7 +75,7 @@ console.log(person.myMethod()[0]);
 console.log(person.myMethod()[1]);
 console.log(person.myMethod(69)[2]);
 */
-
+/*
 let age = 26;
 
 function changedAge(age) {
@@ -84,8 +84,8 @@ function changedAge(age) {
 
 console.log(changedAge(age)); //27
 console.log(age); //26
+*/
 
-/*
 let person = {
   name: "Code",
   age: 26,
@@ -96,6 +96,5 @@ function incAge(person) {
   return ++person.age;
 }
 
-console.log(incAge(person));
-console.log(person.age);
-*/
+console.log(incAge(person)); //27
+console.log(person.age); //27
