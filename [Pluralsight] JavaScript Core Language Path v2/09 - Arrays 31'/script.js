@@ -70,5 +70,6 @@ console.log(newValues);
 console.log(values);
 */
 const values = ["a", "b", "c", "d"];
-values.splice(1, 2);
+values.splice(1, 2, "copa");
 console.log(values);
+
