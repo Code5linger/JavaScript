@@ -131,7 +131,12 @@ let dropped = values.pop();
 console.log(dropped);
 console.log(values);
 */
+/*
 const values = ["a", "b", "c"];
 let first = values.shift();
 console.log(first);
 console.log(values);
+*/
+const values = ["a", "b", "c"];
+values.unshift("a");
+console.log(values[0]);
