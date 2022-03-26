@@ -125,7 +125,13 @@ const values = ["a", "b", "c"];
 values.push("d");
 console.log(values[3]);
 */
+/*
 const values = ["a", "b", "c"];
 let dropped = values.pop();
 console.log(dropped);
+console.log(values);
+*/
+const values = ["a", "b", "c"];
+let first = values.shift();
+console.log(first);
 console.log(values);
