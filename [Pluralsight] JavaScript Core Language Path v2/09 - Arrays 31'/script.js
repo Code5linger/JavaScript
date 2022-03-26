@@ -137,6 +137,15 @@ let first = values.shift();
 console.log(first);
 console.log(values);
 */
+/*
+const values = ["b", "c"];
+let first = values.unshift("a", "d", "e");
+console.log(values, first);
+*/
+
 const values = ["a", "b", "c"];
-values.unshift("a");
-console.log(values[0]);
+console.log(values);
+const newValues = values.splice(2, 1, "hello");
+
+console.log(newValues);
+console.log(values);
