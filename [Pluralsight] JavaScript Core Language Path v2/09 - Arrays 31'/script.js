@@ -142,10 +142,11 @@ const values = ["b", "c"];
 let first = values.unshift("a", "d", "e");
 console.log(values, first);
 */
-
+/*
 const values = ["a", "b", "c"];
 console.log(values);
 const newValues = values.splice(2, 1, "hello");
 
 console.log(newValues);
 console.log(values);
+*/
