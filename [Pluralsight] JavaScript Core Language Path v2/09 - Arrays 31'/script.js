@@ -113,6 +113,7 @@ console.log(typeof values);
 console.log(Array.isArray(values));
 */
 const values = ["a", "b", "c"];
+values[1] = "bbbbb";
 console.log(values[0]);
 console.log(values[1]);
 console.log(values[2]);
