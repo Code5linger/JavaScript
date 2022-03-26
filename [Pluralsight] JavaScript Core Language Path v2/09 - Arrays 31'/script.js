@@ -150,7 +150,16 @@ const newValues = values.splice(2, 1, "hello");
 console.log(newValues);
 console.log(values);
 */
+/*
 const values = ["a", "b", "c"];
 console.log(values.indexOf("c"));
 console.log(values.indexOf("a"));
 console.log(values.indexOf("d"));
+*/
+/*
+const values = ["a", "b", "c", "d"];
+const set = values.filter(function (item) {
+  return item > "b";
+});
+console.log(set);
+*/
