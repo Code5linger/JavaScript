@@ -120,6 +120,12 @@ console.log(values[1]);
 console.log(values[2]);
 console.log(values[3]);
 */
+/*
 const values = ["a", "b", "c"];
 values.push("d");
 console.log(values[3]);
+*/
+const values = ["a", "b", "c"];
+let dropped = values.pop();
+console.log(dropped);
+console.log(values);
