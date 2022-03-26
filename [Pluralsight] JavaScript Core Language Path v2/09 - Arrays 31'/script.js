@@ -103,5 +103,9 @@ values.forEach(function (item) {
 let Array = ["a", "b", "c"];
 console.log(Array[0]);
 */
+/*
 let values = Array.of("1", "2", "3");
 console.log(values[0]);
+*/
+const values = ["a", "b", "c"];
+console.log(typeof values);
