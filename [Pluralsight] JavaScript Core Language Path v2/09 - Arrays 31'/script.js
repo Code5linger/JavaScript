@@ -150,3 +150,6 @@ const newValues = values.splice(2, 1, "hello");
 console.log(newValues);
 console.log(values);
 */
+const values = ["a", "b", "c"];
+console.log(values.indexOf("c"));
+console.log(values.indexOf("a"));
