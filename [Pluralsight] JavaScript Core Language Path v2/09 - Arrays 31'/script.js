@@ -99,3 +99,67 @@ values.forEach(function (item) {
   console.log("item: ", item);
 });
 */
+/*
+let Array = ["a", "b", "c"];
+console.log(Array[0]);
+*/
+/*
+let values = Array.of("1", "2", "3");
+console.log(values[0]);
+*/
+/*
+const values = ["a", "b", "c"];
+console.log(typeof values);
+console.log(Array.isArray(values));
+*/
+/*
+const values = ["a", "b", "c"];
+values[1] = "bbbbb";
+console.log(values[0]);
+console.log(values[1]);
+console.log(values[2]);
+console.log(values[3]);
+*/
+/*
+const values = ["a", "b", "c"];
+values.push("d");
+console.log(values[3]);
+*/
+/*
+const values = ["a", "b", "c"];
+let dropped = values.pop();
+console.log(dropped);
+console.log(values);
+*/
+/*
+const values = ["a", "b", "c"];
+let first = values.shift();
+console.log(first);
+console.log(values);
+*/
+/*
+const values = ["b", "c"];
+let first = values.unshift("a", "d", "e");
+console.log(values, first);
+*/
+/*
+const values = ["a", "b", "c"];
+console.log(values);
+const newValues = values.splice(2, 1, "hello");
+
+console.log(newValues);
+console.log(values);
+*/
+/*
+const values = ["a", "b", "c"];
+console.log(values.indexOf("c"));
+console.log(values.indexOf("a"));
+console.log(values.indexOf("d"));
+*/
+/*
+const values = ["a", "b", "c", "d"];
+const set = values.filter(function (item) {
+  return item > "b";
+});
+console.log(set);
+*/
