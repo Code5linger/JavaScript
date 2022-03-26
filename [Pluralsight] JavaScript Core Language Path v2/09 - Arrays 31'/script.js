@@ -99,3 +99,6 @@ values.forEach(function (item) {
   console.log("item: ", item);
 });
 */
+
+let Array = ["a", "b", "c"];
+console.log(Array[0]);
