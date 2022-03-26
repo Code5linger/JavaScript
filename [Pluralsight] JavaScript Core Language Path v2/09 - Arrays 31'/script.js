@@ -99,6 +99,9 @@ values.forEach(function (item) {
   console.log("item: ", item);
 });
 */
-
+/*
 let Array = ["a", "b", "c"];
 console.log(Array[0]);
+*/
+let values = Array.of("1", "2", "3");
+console.log(values[0]);
