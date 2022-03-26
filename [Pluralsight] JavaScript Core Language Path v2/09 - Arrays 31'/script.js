@@ -153,3 +153,4 @@ console.log(values);
 const values = ["a", "b", "c"];
 console.log(values.indexOf("c"));
 console.log(values.indexOf("a"));
+console.log(values.indexOf("d"));
