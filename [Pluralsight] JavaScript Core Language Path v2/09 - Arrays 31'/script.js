@@ -163,3 +163,9 @@ const set = values.filter(function (item) {
 });
 console.log(set);
 */
+const values = ["a", "bbb", "c", "d"];
+const found = values.find(function (item) {
+  return item.length > 1;
+});
+
+console.log(found);
