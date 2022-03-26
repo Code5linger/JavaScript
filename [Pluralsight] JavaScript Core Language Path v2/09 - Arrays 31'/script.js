@@ -173,4 +173,17 @@ values.forEach(function (item) {
 const containers = document.getElementsByClassName("containers");
 
 console.log(containers);
+const values = ["a", "bbb", "c", "d"];
+const found = values.find(function (item) {
+  return item.length > 1;
+});
 
+console.log(found);
+
+/*
+const values = ["a", "b", "c", "d"];
+values.forEach(function (item) {
+  console.log(item);
+});
+
+*/
