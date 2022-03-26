@@ -163,3 +163,14 @@ const set = values.filter(function (item) {
 });
 console.log(set);
 */
+/*
+const values = ["a", "b", "c", "d"];
+values.forEach(function (item) {
+  console.log("item: ", item);
+});
+*/
+
+const containers = document.getElementsByClassName("containers");
+
+console.log(containers);
+
