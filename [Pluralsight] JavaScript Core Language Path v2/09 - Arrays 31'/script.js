@@ -107,5 +107,7 @@ console.log(Array[0]);
 let values = Array.of("1", "2", "3");
 console.log(values[0]);
 */
+
 const values = ["a", "b", "c"];
 console.log(typeof values);
+console.log(Array.isArray(values));
