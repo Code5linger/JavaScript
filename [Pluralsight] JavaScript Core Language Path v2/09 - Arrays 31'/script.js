@@ -169,7 +169,7 @@ values.forEach(function (item) {
   console.log("item: ", item);
 });
 */
-
+/*
 const containers = document.getElementsByClassName("containers");
 
 console.log(containers);
@@ -179,7 +179,7 @@ const found = values.find(function (item) {
 });
 
 console.log(found);
-
+*/
 /*
 const values = ["a", "b", "c", "d"];
 values.forEach(function (item) {
@@ -188,3 +188,15 @@ values.forEach(function (item) {
 
 */
 //For the streak
+/*
+for (var i = 0; i < 3; i++) {
+  setTimeout(function () {
+    alert(i);
+  }, 1000 + i);
+}
+*/
+(function () {
+  var a = (b = 5);
+})();
+
+console.log(b);
