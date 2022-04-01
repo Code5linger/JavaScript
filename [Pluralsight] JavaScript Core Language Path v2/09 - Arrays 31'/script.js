@@ -227,10 +227,33 @@ function useId() {
 useId();
 console.log(app.id);
 */
+/*
+let id = 123;
 
 function showId() {
-  let id = 123;
-  console.log(id);
+  //let id = 456;
+
+  function nest() {
+    //let id = 789;
+    console.log("In nest: ", id);
+  }
+  nest();
+
+  console.log("In showId", id);
 }
 showId();
+console.log("OutSide: ", id);
+*/
+/*
+id = 456;
+
 console.log(id);
+let id = 123;
+*/
+/*
+id();
+
+function id() {
+  console.log(123);
+}
+*/
