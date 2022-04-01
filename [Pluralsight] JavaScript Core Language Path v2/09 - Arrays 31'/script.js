@@ -195,10 +195,42 @@ for (var i = 0; i < 3; i++) {
   }, 1000 + i);
 }
 */
+/*
 (function () {
   var a = (b = 5);
 })();
 
 console.log(b);
-
+*/
 //For the streak
+
+//let id = 42069;
+/*
+function useId() {
+  console.log(id);
+}
+
+useId();
+console.log(id);
+*/
+/*
+const app = {
+  id: 123,
+  fname: "Copa",
+  job: true,
+};
+
+function useId() {
+  console.log(app.id);
+}
+
+useId();
+console.log(app.id);
+*/
+
+function showId() {
+  let id = 123;
+  console.log(id);
+}
+showId();
+console.log(id);
