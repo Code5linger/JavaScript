@@ -257,3 +257,9 @@ function id() {
   console.log(123);
 }
 */
+"use strict";
+
+let id = 789;
+
+console.log(id);
+
