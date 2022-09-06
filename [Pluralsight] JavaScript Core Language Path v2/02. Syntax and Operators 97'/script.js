@@ -171,3 +171,42 @@ function simpleSwitch() {
   }
 }
 */
+/*
+function simpleSwitch() {
+  let productId = 5;
+
+  switch (productId) {
+    case 1:
+      console.log("1");
+      break;
+    case 2:
+      console.log("2");
+      break;
+    case 3:
+      console.log("3");
+      break;
+
+    default:
+      console.log("Unknown");
+  }
+}
+*/
+
+function simpleSwitch() {
+  let color = "Red";
+
+  switch (color) {
+    case 1:
+      console.log("1");
+      break;
+    case 2:
+      console.log("2");
+      break;
+    case 3:
+      console.log("3");
+      break;
+
+    default:
+      console.log("Unknown");
+  }
+}
