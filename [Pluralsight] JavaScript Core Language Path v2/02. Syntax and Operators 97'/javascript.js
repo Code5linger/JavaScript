@@ -19,7 +19,7 @@ function simpleSwitch() {
   }
 }
 */
-
+/*
 function simpleSwitch() {
   let color = "Blue";
 
@@ -42,3 +42,20 @@ function simpleSwitch() {
       break;
   }
 }
+*/
+/*
+function simpleSwitch() {
+  let productId = 2;
+
+  switch (productId) {
+    case 1:
+      console.log("Product 1");
+      break;
+    case 2:
+      console.log("Product 2");
+      break;
+    default:
+      console.log("Unknown Product ");
+  }
+}
+*/
