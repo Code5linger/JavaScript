@@ -79,7 +79,7 @@ function simpleSwitch() {
   }
 }
 */
-
+/*
 function simpleSwitch() {
   let Color = "Lava";
 
@@ -92,6 +92,26 @@ function simpleSwitch() {
     case "Royal":
       console.log("🟦");
       break;
+    default:
+      console.log("🤷‍♀️");
+      break;
+  }
+}
+*/
+
+function simpleSwitch() {
+  let color = "Red";
+
+  switch (color) {
+    case "Red":
+    case "Lava":
+      console.log("🟥");
+      break;
+    case "Blue":
+    case "Royal":
+      console.log("🟦");
+      break;
+
     default:
       console.log("🤷‍♀️");
       break;
