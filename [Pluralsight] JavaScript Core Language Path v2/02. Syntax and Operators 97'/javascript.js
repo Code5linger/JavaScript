@@ -98,7 +98,7 @@ function simpleSwitch() {
   }
 }
 */
-
+/*
 function simpleSwitch() {
   let color = "Red";
 
@@ -106,7 +106,7 @@ function simpleSwitch() {
     case "Red":
     case "Lava":
       console.log("🟥");
-      break;
+    //break;
     case "Blue":
     case "Royal":
       console.log("🟦");
@@ -117,3 +117,29 @@ function simpleSwitch() {
       break;
   }
 }
+*/
+/*
+function simpleSwitch() {
+  let id = "2";
+
+  switch (id) {
+    case 1: {
+      let test = "XX";
+      console.log("1");
+      break;
+    }
+
+    case 2: {
+      let test = "XX";
+      console.log("2");
+      break;
+    }
+
+    default: {
+      let test = "XX";
+      console.log("🤷‍♀️" + test);
+      break;
+    }
+  }
+}
+*/
