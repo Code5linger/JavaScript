@@ -59,6 +59,7 @@ function simpleSwitch() {
   }
 }
 */
+/*
 function simpleSwitch() {
   let id = 10;
 
@@ -74,6 +75,25 @@ function simpleSwitch() {
       break;
     case 3:
       console.log("3");
+      break;
+  }
+}
+*/
+
+function simpleSwitch() {
+  let Color = "Lava";
+
+  switch (Color) {
+    case "Red":
+    case "Lava":
+      console.log("🟥");
+    //break;
+    case "Blue":
+    case "Royal":
+      console.log("🟦");
+      break;
+    default:
+      console.log("🤷‍♀️");
       break;
   }
 }
