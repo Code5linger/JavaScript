@@ -29,8 +29,16 @@ mt = 1;
 console.log(mt + " 🤦‍♂️");
 mt = 69;
 console.log(mt + " 🤦‍♂️");
-
+/*
 const testA = 55;
 console.log(testA);
 testA = 69;
 console.log(testA);
+*/
+/*
+const testB;
+console.log(testB)
+*/
+console.log(testC);
+
+var testC = 59;
