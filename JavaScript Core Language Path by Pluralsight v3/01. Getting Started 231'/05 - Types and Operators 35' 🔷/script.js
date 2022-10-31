@@ -9,3 +9,23 @@ num = num + 1;
 console.log(num);
 num = num - 2;
 console.log(num);
+num = num * 5;
+console.log(num);
+num = num / 5;
+console.log(num);
+num = num % 5;
+console.log(num);
+num += 1;
+console.log(num);
+num -= 1;
+console.log(num);
+num *= 5;
+console.log(num);
+num /= 5;
+console.log(num);
+num %= 5;
+console.log(num);
+
+let numA = 5,
+  numB = 7;
+console.log(numA * numB);
