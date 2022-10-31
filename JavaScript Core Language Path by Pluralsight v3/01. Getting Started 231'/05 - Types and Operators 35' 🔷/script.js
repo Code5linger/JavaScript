@@ -29,3 +29,8 @@ console.log(num);
 let numA = 5,
   numB = 7;
 console.log(numA * numB);
+
+let numI = 12;
+console.log(++numI);
+console.log(numI + "💥");
+console.log(numI + "💥");
