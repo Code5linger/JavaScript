@@ -43,3 +43,12 @@ console.log(typeof numA);
 
 let str = "Test";
 console.log(typeof str);
+
+let numB = 1;
+console.log(numB + 1);
+console.log(numB - 2);
+console.log(numB * 5);
+console.log(numB / 5);
+console.log(numB % 5);
+numB += 1;
+console.log(numB);
