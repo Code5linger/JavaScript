@@ -52,3 +52,41 @@ console.log(numB / 5);
 console.log(numB % 5);
 numB += 1;
 console.log(numB);
+numB -= 1;
+console.log(numB);
+numB *= 5;
+console.log(numB);
+numB /= 5;
+console.log(numB);
+numB %= 5;
+console.log(numB);
+console.log((numA + 5) * numB);
+
+let numC = 7,
+  numD = 8;
+console.log(numC * numD);
+
+let numE = 0;
+console.log(++numE + " ⚓");
+let numF = 0;
+console.log(numF++ + " ™");
+console.log(numF++);
+console.log(numF);
+
+let numG = 10;
+console.log(--numG);
+
+let price = (3 + 2) * 2;
+console.log(price);
+
+let numH = 1.1 + 1.3;
+console.log(numH);
+
+let strA = "lo'rem i'psum";
+console.log(strA);
+
+let strB = 'lo"rem" ipsum';
+console.log(strB);
+
+let strC = "lorem\\ipsum";
+console.log(strC);
