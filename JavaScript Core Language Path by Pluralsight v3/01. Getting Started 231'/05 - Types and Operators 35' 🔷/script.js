@@ -36,3 +36,10 @@ console.log(++numI);
 console.log(numI + "💥");
 console.log(numI + "💥");
 */
+
+let numA = 17;
+console.log(numA);
+console.log(typeof numA);
+
+let str = "Test";
+console.log(typeof str);
