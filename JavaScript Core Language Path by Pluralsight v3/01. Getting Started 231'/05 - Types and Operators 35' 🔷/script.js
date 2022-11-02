@@ -1,3 +1,4 @@
+/*
 let num = 17.69;
 console.log(num);
 console.log(typeof num);
@@ -34,3 +35,4 @@ let numI = 12;
 console.log(++numI);
 console.log(numI + "💥");
 console.log(numI + "💥");
+*/
