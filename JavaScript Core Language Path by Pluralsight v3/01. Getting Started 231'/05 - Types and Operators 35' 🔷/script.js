@@ -108,3 +108,41 @@ let strH = "LOREM";
 console.log(strH.toLowerCase());
 let strI = "lorem";
 console.log(strI.toUpperCase());
+
+console.log(strI[4]);
+let strJ = "Yo";
+strJ = strJ.substring(1);
+console.log(strJ);
+
+console.log(strH.length);
+
+console.log(typeof numH);
+numH = numH.toString();
+console.log(typeof numH);
+
+let numJ = "121.69";
+console.log(typeof numJ);
+numJ = Number.parseFloat(numJ);
+console.log(typeof numJ);
+
+console.log(typeof numE);
+numE = Number.parseInt(numE);
+console.log(typeof numE);
+
+let boolA = true;
+console.log(typeof boolA);
+console.log(boolA);
+boolA = !boolA;
+console.log(boolA);
+
+let undefA;
+console.log(undefA);
+undefA = null;
+console.log(undefA);
+
+let objA = {
+  name: "A",
+  age: 17,
+};
+console.log(typeof objA);
+console.log(objA[(0, 0)]);
