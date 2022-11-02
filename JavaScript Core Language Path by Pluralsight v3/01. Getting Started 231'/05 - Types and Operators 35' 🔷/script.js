@@ -90,3 +90,21 @@ console.log(strB);
 
 let strC = "lorem\\ipsum";
 console.log(strC);
+
+let strD = "lorem \nipsum";
+console.log(strD);
+
+let strE = "lor\"e\"m'i'psum";
+console.log(strE);
+
+let strF = `lorem ipsum ${numA}`;
+console.log(strF);
+
+let strG = "Lorem ";
+strG = strG + "ipsum";
+console.log(strG);
+
+let strH = "LOREM";
+console.log(strH.toLowerCase());
+let strI = "lorem";
+console.log(strI.toUpperCase());
