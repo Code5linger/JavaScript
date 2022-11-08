@@ -24,6 +24,7 @@ let value = 20;
 if (value > 15) {
   console.log("Discounted");
 }
+
 /*
 if (+(1.1 + 1.3).toFixed(2) === 2.4) {
   console.log("True");
@@ -31,3 +32,15 @@ if (+(1.1 + 1.3).toFixed(2) === 2.4) {
   console.log("False");
 }
 */
+
+let score = 50;
+
+if (score >= 80) {
+  console.log("A++");
+} else if (score >= 70) {
+  console.log("A");
+} else if (score >= 60) {
+  console.log("A--");
+} else {
+  console.log("Fail👼🏻");
+}
