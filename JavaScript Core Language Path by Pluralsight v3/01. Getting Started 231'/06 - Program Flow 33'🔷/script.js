@@ -44,3 +44,17 @@ if (score >= 80) {
 } else {
   console.log("Fail👼🏻");
 }
+
+if (1 == "1") {
+  console.log("true");
+} else {
+  console.log("falseX");
+}
+
+let price = 5;
+/*
+let test = price > 10 ? "exp" : "cheap";
+console.log(test);
+*/
+
+price < 10 ? console.log("cheapX") : console.log("expX");
