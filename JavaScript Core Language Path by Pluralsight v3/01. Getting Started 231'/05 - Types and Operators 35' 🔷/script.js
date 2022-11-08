@@ -145,4 +145,4 @@ let objA = {
   age: 17,
 };
 console.log(typeof objA);
-console.log(objA[(0, 0)]);
+console.log();
