@@ -33,3 +33,20 @@ console.log(numH);
 
 let numI = (3 + 2) * 2;
 console.log(numI); //Operator Precedence
+
+let numJ = 1.1 + 1.3;
+console.log(numJ); //Number Precision
+
+console.log("lorem \nipsum");
+
+let strB = "Lorem Ipsum";
+strB = strB.toLocaleLowerCase();
+console.log(strB);
+strB = strB.toUpperCase();
+console.log(strB);
+strB = strB.substring(8);
+console.log(strB);
+console.log(strB.length);
+
+let numK = 55;
+console.log(object);

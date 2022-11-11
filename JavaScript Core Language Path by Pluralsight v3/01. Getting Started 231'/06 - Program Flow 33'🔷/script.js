@@ -32,7 +32,7 @@ if (+(1.1 + 1.3).toFixed(2) === 2.4) {
   console.log("False");
 }
 */
-
+/*
 let score = 50;
 
 if (score >= 80) {
@@ -56,5 +56,6 @@ let price = 5;
 let test = price > 10 ? "exp" : "cheap";
 console.log(test);
 */
-
+/*
 price < 10 ? console.log("cheapX") : console.log("expX");
+*/
