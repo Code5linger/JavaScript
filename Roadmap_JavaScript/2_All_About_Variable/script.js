@@ -126,3 +126,5 @@
 // days.forEach(function (day, index) {
 //   console.log(`day: ${day}, index: ${index}`);
 // });
+
+document.getElementById("person_a");
