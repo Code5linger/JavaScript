@@ -121,8 +121,8 @@
 // }
 
 // 08 Control Flow\8.1 Conditional Statement\8.1.5 forEach Loop
-let days = ["Sat", "Sun", "Mon"];
+// let days = ["Sat", "Sun", "Mon"];
 
-days.forEach(function (day, index) {
-  console.log(`day: ${day}, index: ${index}`);
-});
+// days.forEach(function (day, index) {
+//   console.log(`day: ${day}, index: ${index}`);
+// });
