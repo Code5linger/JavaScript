@@ -55,20 +55,36 @@
 // console.log(test);
 
 //03 Data Types > 3.3.1 Object
-let firstName = "Sakib";
-let lastName = "Ahmed";
-let youTube = "CodeSlinger";
+// let firstName = "Sakib";
+// let lastName = "Ahmed";
+// let youTube = "CodeSlinger";
 
-let person = {
-  firstName: "Sakib",
-  lastName: "Ahmed",
-  youTube: "CodeSlinger",
-  greet: function () {
-    console.log("Hi👋 " + this.firstName);
-  },
-};
+// let person = {
+//   firstName: "Sakib",
+//   lastName: "Ahmed",
+//   youTube: "CodeSlinger",
+//   greet: function () {
+//     console.log("Hi👋 " + this.firstName);
+//   },
+// };
 
-person.greet();
+// person.greet();
+
+//05 Data Structures\5.1 Indexed Collections\5.1.2 Arrays
+// function test() {
+//   return "💥";
+// }
+
+// let array = [1, "Colin", true, test()];
+
+// console.log(array[0]);
+// console.log(array[1]);
+// console.log(array[2]);
+// console.log(array[3]);
+
+// console.log(array[0], array[1], array[2], array[3]);
+// console.log(array.reverse());
+// console.log(array.length);
 
 // console.log(person.firstName, person.lastName, person.youTube);
 // 08 Control Flow > 8.1 Conditional Statement > 8.1.1 If...else
@@ -82,3 +98,5 @@ person.greet();
 // } else {
 //   console.log("🤌🤌");
 // }
+
+// 08 Control Flow\8.1 Conditional Statement\8.1.3 While Loop
