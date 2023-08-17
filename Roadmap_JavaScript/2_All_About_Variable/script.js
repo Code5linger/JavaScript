@@ -127,4 +127,17 @@
 //   console.log(`day: ${day}, index: ${index}`);
 // });
 
-document.getElementById("person_a");
+// document.getElementById("person_a");
+
+// let links = document.querySelectorAll(".tag");
+// links.forEach(function (link) {
+//   link.setAttribute("target", "_blank");
+//   console.log("??");
+// });
+
+// let links = document.querySelectorAll(".tag");
+// console.log(links);
+
+// links.forEach(function (link) {
+//   link.setAttribute("target", "_blank");
+// });

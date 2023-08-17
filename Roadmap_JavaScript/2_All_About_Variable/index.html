@@ -7,20 +7,31 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
   </head>
+
   <body>
     <section id="person_a" class="card">
       <h1>Person A</h1>
       <ul>
-        <li><a href="#" class="tag">Twitter</a></li>
-        <li><a href="#" class="tag">GitHub</a></li>
+        <li><a href="https://www.google.com/" class="tag">Twitter</a></li>
+        <li><a href="https://www.google.com/" class="tag">GitHub</a></li>
       </ul>
     </section>
+
     <section id="person_b" class="card">
       <h1>Person A</h1>
       <ul>
-        <li><a href="#" class="tag">Twitter</a></li>
-        <li><a href="#" class="tag">GitHub</a></li>
+        <li><a href="https://www.google.com/" class="tag">Twitter</a></li>
+        <li><a href="https://www.google.com/" class="tag">GitHub</a></li>
       </ul>
     </section>
+
+    <script>
+      let links = document.querySelectorAll(".tag");
+      console.log(links);
+
+      links.forEach(function (link) {
+        link.setAttribute("target", "_blank");
+      });
+    </script>
   </body>
 </html>
