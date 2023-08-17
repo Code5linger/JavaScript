@@ -100,3 +100,29 @@
 // }
 
 // 08 Control Flow\8.1 Conditional Statement\8.1.3 While Loop
+// let count = 0;
+// let max = 10;
+
+// while (count < max) {
+//   console.log(count);
+//   count = count + 1;
+// }
+
+//08 Control Flow\8.1 Conditional Statement\8.1.4 For Loop
+
+// function test() {
+//   return "💥";
+// }
+
+// let array = [1, "Colin", true, test(), "Yo👓"];
+
+// for (let i = 0; i < array.length; i++) {
+//   console.log(array[i]);
+// }
+
+// 08 Control Flow\8.1 Conditional Statement\8.1.5 forEach Loop
+let days = ["Sat", "Sun", "Mon"];
+
+days.forEach(function (day, index) {
+  console.log(`day: ${day}, index: ${index}`);
+});
