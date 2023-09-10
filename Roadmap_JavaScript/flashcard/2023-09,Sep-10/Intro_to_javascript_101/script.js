@@ -15,11 +15,23 @@
 // document.body.appendChild(newParagraph);
 
 // Ite 2
-let today = Date();
-document.body.innerHTML = "<h1>Hi👋 Today is " + today + "</h1>";
+// let today = Date();
+// document.body.innerHTML = "<h1>Hi👋 Today is " + today + "</h1>";
+
+// let newParagraph = document.createElement("p");
+// let textForNewParagraph = document.createTextNode("lorem ipsum");
+
+// newParagraph.appendChild(textForNewParagraph);
+// document.body.appendChild(newParagraph);
 
 // Ite 3
 // document.body.innerHTML = "<h1>Hi! Today is " + Date() + "</h1>";
+
+// let newParagraph = document.createElement("H1");
+// let textForNewParagraph = document.createTextNode("Lorem Ipsum");
+
+// newParagraph.appendChild(textForNewParagraph);
+// document.body.appendChild(newParagraph);
 
 // Ite 4
 // document.body.innerHTML = "<h1>Hi! Today is " + Date() + "</h1>";
