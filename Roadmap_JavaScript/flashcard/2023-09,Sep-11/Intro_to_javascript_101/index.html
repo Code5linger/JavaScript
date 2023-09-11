@@ -4,8 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript</title>
-    <!-- JS -->
-    <script src="./script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- JavaScript -->
+    <script>
+      document.body.innerHTML = "<h1>Todays Date is " + Date() + "</h1>";
+
+      //   New Element
+      let newTag = document.createElement("h1");
+      let textForNewTag = document.createTextNode("Lorem Ipsum");
+
+      newTag.appendChild(textForNewTag);
+      document.body.appendChild(newTag);
+
+      //   Style
+      document.body.style.background = "black";
+      document.body.style.color = "White";
+      document.body.style.textAlign = "center";
+      document.body.style.padding = "10rem 0";
+    </script>
+  </body>
 </html>

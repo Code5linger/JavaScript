@@ -52,11 +52,11 @@
 // document.body.innerHTML = "<h5>Hi! Today is " + Date() + "</h5>";
 
 // Ite 10
-// document.body.innerHTML = "<h2>Hi! Today is " + Date() + "</h2>";
-// document.body.style.background = "Crimson";
-// document.body.style.color = "White";
-// document.body.style.textAlign = "center";
-// document.body.style.padding = "10rem";
+document.body.innerHTML = "<h2>Hi! Today is " + Date() + "</h2>";
+document.body.style.background = "Crimson";
+document.body.style.color = "White";
+document.body.style.textAlign = "center";
+document.body.style.padding = "10rem";
 // Ite 1
 // document.body.innerHTML = "<h2>Hi👋 Today is " + Date() + "</h2>";
 // document.body.style.background = "Black";
