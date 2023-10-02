@@ -34,3 +34,8 @@ button.onclick = () => {
   alert(`Hello ${prompt("What is your name?")}, nice to see you`);
   header.textContent = `Welcome ${prompt("Your name again please")}`;
 };
+
+str = "Hoisting";
+console.log(str);
+
+var str;
