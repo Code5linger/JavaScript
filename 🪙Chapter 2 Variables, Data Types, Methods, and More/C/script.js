@@ -1,6 +1,10 @@
-let amount = 100;
+let amount = 'sup';
 
-// Converting Number to String
-amount = amount.toString();
+// Converting String to Number
+amount = parseInt(amount);
+console.log(Math.sqrt(-1));
+console.log(1 + NaN);
+console.log(undefined + undefined);
+console.log('foo' / 2);
 
 console.log(amount, typeof amount);
