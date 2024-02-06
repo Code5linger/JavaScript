@@ -45,13 +45,36 @@
 // console.log(obj3, typeof obj3);
 // console.log(obj4, typeof obj4);
 
-const todos = [
-  { id: 1, name: '1' },
-  { id: 2, name: '2' },
-  { id: 3, name: '3' },
-];
+// const todos = [
+//   { id: 1, name: '1' },
+//   { id: 2, name: '2' },
+//   { id: 3, name: '3' },
+// ];
 
-console.log(todos);
+// console.log(todos);
 
-let x = todos[0];
-console.log(x);
+// x = todos.length;
+// console.log(x, typeof x);
+
+const fNmae = 'Elrick';
+const lName = 'Ashford';
+const age = '29';
+
+const person = {
+  fNmae,
+  lName,
+  age,
+};
+
+console.log(person.age, typeof age);
+
+//  Destructuring
+
+const todo = {
+  id: 1,
+  title: 'Take out trash',
+};
+
+const { id, title } = todo;
+
+console.log(id, title);
