@@ -23,14 +23,14 @@
 const double = (a = 5) => a * 2;
 const add = (a = 3, b = 7) => a + b;
 
-console.log(add());
-console.log(double());
+// console.log(add());
+// console.log(double());
 
 // Returning Object
 const createObj = () => ({
   name: 'Code',
 });
-console.log(createObj(name));
+// console.log(createObj(name));
 
 const numbers = [1, 2, 3, 4, 5];
 
@@ -38,4 +38,4 @@ const numbers = [1, 2, 3, 4, 5];
 //   console.log(n);
 // });
 
-numbers.forEach((n) => console.log(n));
+// numbers.forEach((n) => console.log(n));
