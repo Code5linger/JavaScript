@@ -1,7 +1,5 @@
 const d = new Date();
-// const month = d.getMonth() + 1;
-
-const month = 5;
+const month = d.getMonth() + 1;
 
 switch (month) {
   case 1:
@@ -15,4 +13,17 @@ switch (month) {
     break;
   default:
     console.log('🦥 Too lazy to type');
+}
+
+const hour = 22;
+
+switch (true) {
+  case hour < 12:
+    console.log('🌅');
+    break;
+  case hour < 18 && hour >= 22:
+    console.log('☀️');
+    break;
+  default:
+    console.log('🌆');
 }
