@@ -55,10 +55,17 @@
 //   console.log('No Posts To List');
 // }
 
-const user = {};
+// const user = { name: 'test' };
 
-if (user) {
-  console.log('List of users 📃');
-} else {
-  console.log('No user to show ');
-}
+// console.log(Object.keys(user).length);
+
+// if (Object.keys(user).length > 0) {
+//   console.log('List of users 📃');
+// } else {
+//   console.log('No user to show ');
+// }
+
+//
+console.log(false === 0);
+console.log(' ' === 0);
+console.log(null === undefined);
