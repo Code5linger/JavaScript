@@ -1,13 +1,25 @@
-//  ||= assign the right side value only if the left is a false value
+//  ||= (OR assignment) assign the right side value only if the left is a false value
 
 let a = false;
 
-if (!a) {
-  a = 20;
-}
+a ||= 69;
 
-// a = a || 10;
+// console.log(a);
 
-console.log(a);
-//  &&= assign the right side value only if the left is a truthy value
-//  ||= assign the right side value only if the left is a null of undefined
+//  &&= (AND assignment) assign the right side value only if the left is a truthy value
+
+let b = true;
+
+b &&= 79;
+
+// console.log(b);
+// 79
+
+//  ??= (nullish coalescing)assign the right side value only if the left is a null or undefined
+
+let c = undefined;
+
+c ??= 89;
+
+console.log(c);
+// 89
