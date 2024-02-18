@@ -57,11 +57,42 @@
 //   }
 // }
 
-const alphabets = ['A', 'B', 'C', 'D', 'E'];
+// const alphabets = ['A', 'B', 'C', 'D', 'E'];
 
-for (i = 0; i <= alphabets.length; i++) {
+// for (i = 0; i <= alphabets.length; i++) {
+//   if (alphabets[i] === 'D') {
+//     console.log('8====' + alphabets[i]);
+//   } else {
+//     console.log(alphabets[i]);
+//   }
+// }
+
+// 1
+// if (([initialExpression], [conditionalExpression], [incrementExpression])) {
+//   statement;
+// }
+// 2 3
+// for (let i = 0; i <= 10; i++) {
+//   if (i === 7) {
+//     console.log(`${i} is a lucky number`);
+//   } else {
+//     console.log(`Number ➡️ ${i}`);
+//   }
+// }
+// 8
+// for (let i = 0; i <= 5; i++) {
+//   console.log(`Number ➡️ ${i}`);
+//   for (let j = 0; j <= 5; j++) {
+//     console.log(`${i} * ${j} = ${i * j}`);
+//   }
+// }
+
+// 9
+const alphabets = ['A', 'B', 'C', 'D', 'E', 'F'];
+
+for (let i = 0; i < alphabets.length; i++) {
   if (alphabets[i] === 'D') {
-    console.log('8====' + alphabets[i]);
+    console.log('8===' + alphabets[i]);
   } else {
     console.log(alphabets[i]);
   }
