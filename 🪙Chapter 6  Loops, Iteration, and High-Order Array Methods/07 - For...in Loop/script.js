@@ -15,4 +15,3 @@ const colorArr = ['red', 'green', 'blue', 'black', 'white'];
 for (const key in colorArr) {
   console.log(colorArr[key]);
 }
-c
