@@ -68,12 +68,50 @@ const title = document.getElementById('app-title');
 
 // secondItem.style.color = 'crimson';
 
-const list = document.querySelector('ul');
+// const list = document.querySelector('ul');
 
 // console.log(list);
 
-const firstItem = list.querySelector('li');
+// const firstItem = list.querySelector('li');
 
-console.log(firstItem.innerText);
+// console.log(firstItem.innerText);
 
-firstItem.style.color = 'yellow';
+// firstItem.style.color = 'yellow';
+
+// querySelectorAll();
+
+// const listItems = document.querySelectorAll('li');
+
+// console.log(listItems);
+
+const listItemsByClass = document.querySelectorAll('.item');
+
+// console.log(listItemsByClass[1].innerText);
+
+// listItemsByClass[1].style.color = 'red';
+
+// listItemsByClass.forEach((item, index) => {
+//   if (index === 0) {
+//     item.innerHTML = `🍑
+//     <button class="remove-item btn-link text-red">
+//             <i class="fa-solid fa-xmark"></i>
+//           </button>
+//       `;
+//   }
+// });
+
+// const listItems = document.getElementsByClassName('item');
+
+// const listItemsArray = Array.from(listItems);
+
+// listItemsArray.forEach((item) => {
+//   console.log(item.innerText);
+// });
+
+// const listItems = document.getElementsByTagName('li');
+
+// const listItemsArray = Array.from(listItems);
+
+// listItemsArray.forEach((item) => {
+//   console.log(item.innerText);
+// });
