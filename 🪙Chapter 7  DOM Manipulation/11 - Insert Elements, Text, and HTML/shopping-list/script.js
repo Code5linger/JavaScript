@@ -1,83 +1,107 @@
-// // Quick
-// // function createListItem(item) {
-// //   const li = document.createElement('li');
+// insertAdjacentElement
+function insertAdjacentElementUpA() {
+  const filter = document.querySelector('.filter');
+  const element = document.createElement('h1');
+  element.textContent = '🖼️';
 
-// //   li.innerHTML = `${item}
-// //           <button class="remove-item btn-link text-red">
-// //             <i class="fa-solid fa-xmark"></i>
-// //           </button>`;
+  filter.insertAdjacentElement('beforebegin', element);
+}
 
-// //   document.querySelector('.items').appendChild(li);
-// // }
+function insertAdjacentElementDownA() {
+  const filter = document.querySelector('.filter');
+  const element = document.createElement('h1');
+  element.textContent = '🏞️';
 
-// // Better
-// function createNewItem(item) {
-//   const li = document.createElement('li');
-//   li.appendChild(document.createTextNode(item));
+  filter.insertAdjacentElement('afterbegin', element);
+}
 
-//   const button = createButton('remove-item btn-link text-red');
+function insertAdjacentElementUpB() {
+  const filter = document.querySelector('.filter');
+  const element = document.createElement('h1');
+  element.textContent = '🖼️';
 
-//   li.appendChild(button);
+  filter.insertAdjacentElement('beforeend', element);
+}
 
-//   console.log(li.innerHTML);
+function insertAdjacentElementDownB() {
+  const filter = document.querySelector('.filter');
+  const element = document.createElement('h1');
+  element.textContent = '🏞️';
 
-//   document.querySelector('.items').appendChild(li);
-// }
+  filter.insertAdjacentElement('afterend', element);
+}
 
-// function createButton(classes) {
-//   const button = document.createElement('button');
-//   button.className = classes;
+// insertAdjacentElementUpA();
+// insertAdjacentElementDownA();
+// insertAdjacentElementUpB();
+// insertAdjacentElementDownB();
 
-//   const icon = createIcon('fa-solid fa-xmark');
-
-//   button.appendChild(icon);
-
-//   return button;
-// }
-
-// function createIcon(classes) {
-//   const icon = document.createElement('i');
-//   icon.className = classes;
-//   return icon;
-// }
-
-// // createListItem('Eggs');
-// createNewItem('Biriani🍚');
-// createNewItem('Noodls🍜');
-
-function insertElement() {
+function insertAdjacentTextUpA() {
   const filter = document.querySelector('.filter');
 
-  const h1 = document.createElement('h1');
-  h1.textContent = 'insertAdjacentElement';
-
-  filter.insertAdjacentElement('beforebegin', h1);
+  filter.insertAdjacentText('beforebegin', 'CodeSlinger Was Here⬆️🅰️');
 }
 
-function insertText() {
-  const item = document.querySelector('li:first-child');
+function insertAdjacentTextUpB() {
+  const filter = document.querySelector('.filter');
 
-  item.insertAdjacentText('beforebegin', 'insertAdjacentElement');
+  filter.insertAdjacentText('afterbegin', 'CodeSlinger Was Here⬆️🅱️');
 }
 
-function insertHTML() {
-  const clearBtn = document.querySelector('#clear');
+function insertAdjacentTextDownA() {
+  const filter = document.querySelector('.filter');
 
-  clearBtn.insertAdjacentHTML('afterend', '<h2>insertAdjacentHTML</h2>');
+  filter.insertAdjacentText('beforeend', 'CodeSlinger Was Here⬇️🅰️');
 }
 
-function insertBeforeItem() {
-  const ul = document.querySelector('ul');
+function insertAdjacentTextDownB() {
+  const filter = document.querySelector('.filter');
 
-  const li = document.createElement('li');
-  li.textContent = 'insertBefore';
-
-  const thirditem = document.querySelector('li:nth-child(3)');
-
-  ul.insertBefore(li, thirditem);
+  filter.insertAdjacentText('afterend', 'CodeSlinger Was Here⬇️🅱️');
 }
 
-// insertElement();
-// insertText();
-// insertHTML();
-insertBeforeItem();
+// insertAdjacentTextUpA();
+// insertAdjacentTextUpB();
+// insertAdjacentTextDownA();
+// insertAdjacentTextDownB();
+
+// insertAdjacentHTML
+function insertAdjacentHTMLUpA() {
+  const clearBTN = document.querySelector('#clear');
+
+  clearBTN.insertAdjacentHTML(
+    'beforebegin',
+    '<h4>CodeSlinger Was Here⬆️🅰️</h4>'
+  );
+}
+
+function insertAdjacentHTMLUpB() {
+  const clearBTN = document.querySelector('#clear');
+
+  clearBTN.insertAdjacentHTML(
+    'afterbegin',
+    '<h4>CodeSlinger Was Here⬆️🅱️</h4>'
+  );
+}
+
+function insertAdjacentHTMLDownA() {
+  const clearBTN = document.querySelector('#clear');
+
+  clearBTN.insertAdjacentHTML('beforeend', '<h4>CodeSlinger Was Here⬇️🅰️</h4>');
+}
+
+function insertAdjacentHTMLDownB() {
+  const clearBTN = document.querySelector('#clear');
+
+  clearBTN.insertAdjacentHTML('afterend', '<h4>CodeSlinger Was Here⬇️🅱️</h4>');
+}
+
+insertAdjacentHTMLUpA();
+insertAdjacentHTMLUpB();
+insertAdjacentHTMLDownA();
+insertAdjacentHTMLDownB();
+
+// beforebegin
+// afterbegin
+// beforeend
+// afterend
