@@ -30,12 +30,28 @@
 // insertAfter('li', '🅱️');
 // insertAfter('.filter', '©️');
 
+// function insertAfter(newEl, existingEl) {
+//   existingEl.parentElement.insertBefore(newEl, existingEl.nextSibling);
+// }
+
+// const li = document.createElement('li');
+// li.textContent = 'Insert Me After!';
+
+// const firstItem = document.querySelector('li:first-child');
+
+// insertAfter(li, firstItem);
+
+// function insertAfter(newEl, existingEl) {
+//   existingEl.parentElement.insertBefore(newEl, existingEl.nextSibling);
+// }
+
 function insertAfter(newEl, existingEl) {
+  console.log(existingEl.parentNode);
   existingEl.parentElement.insertBefore(newEl, existingEl.nextSibling);
 }
 
 const li = document.createElement('li');
-li.textContent = 'Insert Me After!';
+li.textContent = '🦐';
 
 const firstItem = document.querySelector('li:first-child');
 
