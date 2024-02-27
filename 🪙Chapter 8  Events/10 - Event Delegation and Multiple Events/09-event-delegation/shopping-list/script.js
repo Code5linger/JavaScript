@@ -20,3 +20,27 @@
 //     e.target.style.color = 'red';
 //   }
 // });
+
+const listItems = document.querySelectorAll('li');
+const list = document.querySelector('ul');
+
+console.log(listItems);
+console.log(list);
+
+// listItems.forEach((item) => {
+//   item.addEventListener('click', (event) => {
+//     event.target.remove();
+//   });
+// });
+
+list.addEventListener('click', (event) => {
+  if (event.target.tagName === 'LI') {
+    event.target.remove();
+  }
+});
+
+list.addEventListener('mouseover', (event) => {
+  if (event.target.tagName === 'LI') {
+    event.target.style.color = 'red';
+  }
+});
