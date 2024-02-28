@@ -63,6 +63,7 @@ const itemForm = document.getElementById('item-form');
 const itemInput = document.getElementById('item-input');
 const itemList = document.getElementById('item-list');
 const clearBtn = document.getElementById('clear');
+const itemFilter = document.getElementById('filter');
 
 function addItem(event) {
   event.preventDefault();
@@ -82,8 +83,10 @@ function addItem(event) {
   const button = createButton('remove-item btn-link text-red');
   li.appendChild(button);
 
-  console.log(li);
+  // Add li to the DOM
   itemList.appendChild(li);
+
+  checkUI();
 
   itemInput.value = '';
 }
@@ -104,7 +107,11 @@ function createIcon(classes) {
 
 function removeItem(event) {
   if (event.target.parentElement.classList.contains('remove-item')) {
-    event.target.parentElement.parentElement.remove();
+    if (confirm('Sure??')) {
+      event.target.parentElement.parentElement.remove();
+
+      checkUI();
+    }
   }
 }
 
@@ -114,7 +121,21 @@ function clearItem() {
     itemList.removeChild(itemList.firstChild);
   }
 }
+
+function checkUI() {
+  const items = itemList.querySelectorAll('li');
+  console.log(items);
+  if (items.length === 0) {
+    clearBtn.style.display = 'none';
+    itemFilter.style.display = 'none';
+  } else {
+    clearBtn.style.display = 'block';
+    itemFilter.style.display = 'block';
+  }
+}
 // Event Listeners
 itemForm.addEventListener('submit', addItem);
 itemList.addEventListener('click', removeItem);
 clearBtn.addEventListener('click', clearItem);
+
+checkUI();
