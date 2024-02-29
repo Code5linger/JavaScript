@@ -92,6 +92,11 @@ function onAddItemSubmit(event) {
     itemToEdit.classList.remove('edit-mode');
     itemToEdit.remove();
     isEditMode = false;
+  } else {
+    if (checkIfItemExists(newItem)) {
+      alert('That item already exists!');
+      return;
+    }
   }
 
   // Create item to
@@ -158,6 +163,11 @@ function onClickItem(event) {
   } else {
     setItemToEdit(event.target);
   }
+}
+
+function checkIfItemExists(item) {
+  const itemsFormStorage = getItemsFromStorage();
+  return itemsFormStorage.includes(item);
 }
 
 function setItemToEdit(item) {
