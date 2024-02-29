@@ -64,8 +64,8 @@ const itemInput = document.getElementById('item-input');
 const itemList = document.getElementById('item-list');
 const clearBtn = document.getElementById('clear');
 const itemFilter = document.getElementById('filter');
-let isEditMode = false;
 const formBtn = itemForm.querySelector('button');
+let isEditMode = false;
 
 function displayItems() {
   const itemFormStorage = getItemsFromStorage();
@@ -83,6 +83,15 @@ function onAddItemSubmit(event) {
   if (newItem === '') {
     alert('Add Item');
     return;
+  }
+
+  if (isEditMode) {
+    const itemToEdit = itemList.querySelector('.edit-mode');
+
+    removeItemFromStorage(itemToEdit.textContent);
+    itemToEdit.classList.remove('edit-mode');
+    itemToEdit.remove();
+    isEditMode = false;
   }
 
   // Create item to
@@ -209,8 +218,10 @@ function clearItem() {
 }
 
 function checkUI() {
+  itemInput.value = '';
+
   const items = itemList.querySelectorAll('li');
-  console.log(items);
+
   if (items.length === 0) {
     clearBtn.style.display = 'none';
     itemFilter.style.display = 'none';
@@ -218,6 +229,11 @@ function checkUI() {
     clearBtn.style.display = 'block';
     itemFilter.style.display = 'block';
   }
+
+  formBtn.innerHTML = '<i class="fa-solid fa-plus"></i>Add Item';
+  formBtn.style.backgroundColor = '#333';
+
+  isEditMode = false;
 }
 
 function init() {
