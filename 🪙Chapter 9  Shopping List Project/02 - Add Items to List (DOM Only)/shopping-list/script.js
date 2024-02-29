@@ -65,6 +65,13 @@ const itemList = document.getElementById('item-list');
 const clearBtn = document.getElementById('clear');
 const itemFilter = document.getElementById('filter');
 
+function displayItems() {
+  const itemFormStorage = getItemsFromStorage();
+  itemFormStorage.forEach((item) => addItemToDOM(item));
+
+  checkUI();
+}
+
 function onAddItemSubmit(event) {
   event.preventDefault();
 
@@ -99,21 +106,6 @@ function addItemToDOM(item) {
   itemList.appendChild(li);
 }
 
-function addItemToStorage(item) {
-  let itemFormStorage;
-
-  if (localStorage.getItem('items') === null) {
-    itemFormStorage = [];
-  } else {
-    itemFormStorage = JSON.parse(localStorage.getItem('items'));
-  }
-
-  itemFormStorage.push(item);
-
-  // Convert to JSON string and set to
-  localStorage.setItem('items', JSON.stringify(itemFormStorage));
-}
-
 function createButton(classes) {
   const button = document.createElement('button');
   button.className = classes;
@@ -126,6 +118,29 @@ function createIcon(classes) {
   const icon = document.createElement('i');
   icon.className = classes;
   return icon;
+}
+
+// 🫙
+
+function addItemToStorage(item) {
+  const itemFormStorage = getItemsFromStorage();
+
+  itemFormStorage.push(item);
+
+  // Convert to JSON string and set to
+  localStorage.setItem('items', JSON.stringify(itemFormStorage));
+}
+
+function getItemsFromStorage() {
+  let itemFormStorage;
+
+  if (localStorage.getItem('items') === null) {
+    itemFormStorage = [];
+  } else {
+    itemFormStorage = JSON.parse(localStorage.getItem('items'));
+  }
+
+  return itemFormStorage;
 }
 
 function removeItem(event) {
@@ -171,13 +186,18 @@ function checkUI() {
     itemFilter.style.display = 'block';
   }
 }
-// Event Listeners
-itemForm.addEventListener('submit', onAddItemSubmit);
-itemList.addEventListener('click', removeItem);
-clearBtn.addEventListener('click', clearItem);
-itemFilter.addEventListener('input', filterItems);
 
-checkUI();
+// Initialize app
+function init() {
+  // Event Listeners
+  itemForm.addEventListener('submit', onAddItemSubmit);
+  itemList.addEventListener('click', removeItem);
+  clearBtn.addEventListener('click', clearItem);
+  itemFilter.addEventListener('input', filterItems);
+  document.addEventListener('DOMContentLoaded', displayItems);
+
+  checkUI();
+}
 
 // localStorage.setItem('firstName', 'Elrick');
 // localStorage.setItem('lastName', 'Ashford');
@@ -189,3 +209,5 @@ checkUI();
 // localStorage.removeItem('name');
 // console.log(localStorage.getItem('name'));
 // localStorage.clear();
+
+init();
