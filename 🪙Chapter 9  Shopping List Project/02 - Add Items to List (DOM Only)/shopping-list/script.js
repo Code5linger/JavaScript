@@ -115,6 +115,21 @@ function removeItem(event) {
   }
 }
 
+function filterItems(event) {
+  const items = itemList.querySelectorAll('li');
+  const text = event.target.value.toLowerCase();
+
+  items.forEach((item) => {
+    const itemName = item.firstChild.textContent.toLowerCase();
+
+    if (itemName.indexOf(text) != -1) {
+      item.style.display = '';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+
 function clearItem() {
   // itemList.innerHTML = '';
   while (itemList) {
@@ -137,5 +152,6 @@ function checkUI() {
 itemForm.addEventListener('submit', addItem);
 itemList.addEventListener('click', removeItem);
 clearBtn.addEventListener('click', clearItem);
+itemFilter.addEventListener('input', filterItems);
 
 checkUI();
