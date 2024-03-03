@@ -53,7 +53,7 @@ let intervalID;
 
 function startChange() {
   if (!intervalID) {
-    intervalID = setInterval(changeRandomColor, 1000);
+    intervalID = setInterval(gradient, 1000);
   }
 }
 
@@ -71,3 +71,19 @@ function stopChange() {
 
 document.getElementById('start').addEventListener('click', startChange);
 document.getElementById('stop').addEventListener('click', stopChange);
+
+//
+//
+function toggle(e) {
+  e.target.classList.toggle('danger');
+}
+
+// document.querySelector('start').addEventListener('click', toggle);
+
+// console.log(document.querySelector('.danger'));
+
+function gradient() {
+  const style = `
+  background: linear-gradient(to right, #b91d73, #f953c6)
+  `;
+}

@@ -2,7 +2,7 @@
 //   e.target.classList.toggle('danger');
 // }
 
-// document.querySelector('button').addEventListener('click', toggle);
+// document.querySelector('body').addEventListener('click', toggle);
 
 const posts = [
   { title: 'Post One', body: 'This is post one' },
@@ -27,3 +27,9 @@ function getPosts() {
 }
 
 createPost({ title: 'Post Three', body: 'This is post' }, getPosts);
+
+// function toggle(event) {
+//   event.target.classList.toggle('danger');
+// }
+
+// document.querySelector('button').addEventListener('click', toggle);

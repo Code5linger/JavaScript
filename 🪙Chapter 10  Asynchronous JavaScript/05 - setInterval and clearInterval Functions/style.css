@@ -33,6 +33,5 @@ button {
 }
 
 .danger {
-  /* background: red; */
   background: linear-gradient(to right, #b91d73, #f953c6);
 }
