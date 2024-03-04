@@ -82,7 +82,6 @@ console.log(person);
 console.log('Hello World!');
 
 let text = 'Hello World';
-
 console.log(text);
 
 let name = 'Sakib';
@@ -92,4 +91,21 @@ console.log('Hello ' + name + '👋');
 
 console.error('🌋');
 
-// console.groupEnd();
+console.groupEnd();
+
+let age = 8;
+console.log(`You are only ${age}, too young for Facebook`);
+
+console.log(totalSwarmaPrice * 5);
+
+console.log(name);
+let greetings = 'Hello ' + name;
+
+console.log(greetings);
+
+let camelCaeVariable;
+let _variableWithUnderScore;
+let PascalCase;
+let lowercase;
+
+// let 69er
