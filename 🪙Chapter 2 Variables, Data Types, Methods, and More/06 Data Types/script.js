@@ -81,15 +81,6 @@
 
 // let firstName = 'Elrick';
 
-let person = {
-  firstName: 'Sakib',
-  lastName: 'Ahmed',
-  age: 69,
-  func: function () {
-    return 'Hello ' + this.firstName;
-  },
-};
-
 // console.log(person);
 // console.log(person.age);
 // console.log(person.func());
@@ -161,14 +152,51 @@ let emoji = '🧓';
 
 // console.log(A1, B1, C1, D1);
 
-let bacA = Math.floor(Math.random() * 16777215).toString(16);
-let bacB = Math.floor(Math.random() * 16777215).toString(16);
+// let bacA = Math.floor(Math.random() * 16777215).toString(16);
+// let bacB = Math.floor(Math.random() * 16777215).toString(16);
 
-let html = `<div style ="display: flex;color: red;align-items: flex-end;justify-content: center; color: red; background: linear-gradient(to right, #${bacA}, #${bacB});">
-<h3>${title}</h3>
-<h1>${age} </h1>
-<h1>${emoji}</h1>
-</div>`;
+// let html = `<div style ="display: flex;color: red;align-items: flex-end;justify-content: center; color: red; background: linear-gradient(to right, #${bacA}, #${bacB});">
+// <h3>${title}</h3>
+// <h1>${age} </h1>
+// <h1>${emoji}</h1>
+// </div>`;
 
-document.querySelector('body').innerHTML = html;
+// document.querySelector('body').innerHTML = html;
 //
+
+// let objA = {};
+// console.log(typeof objA);
+
+// let objB = new Object();
+// console.log(typeof objB);
+
+// let person = {
+//   firstName: 'Sakib',
+//   lastName: 'Ahmed',
+//   age: 69,
+//   func: function () {
+//     return 'Hello ' + this.firstName;
+//   },
+// };
+
+// delete person.age;
+// console.log(person.func());
+
+let num1 = 6;
+let num2 = -100000000000000;
+
+let num4 = 900000000000000000000000000000000000000000000000000000000000;
+
+console.log(num4);
+
+let num5 = -80000000000000000000000000000000000000000000000000000000000;
+
+console.log(num5);
+
+let num6 = 1.2e10;
+console.log(num6);
+
+console.log(`${Number.MIN_VALUE}`);
+console.log(`${Number.MIN_SAFE_INTEGER}`);
+console.log(`${Number.MAX_VALUE}`);
+console.log(`${Number.MAX_SAFE_INTEGER}`);
