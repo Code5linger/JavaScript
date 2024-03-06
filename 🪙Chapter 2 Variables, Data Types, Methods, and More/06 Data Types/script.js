@@ -211,6 +211,50 @@ let arr = [1, 2, 3, 4, 5];
 
 // let result = arr.join(',');
 // let result = arr.concat(['ken', 'doll']);
-let result = arr.push('test');
+// let result = arr.push('test');
 
-console.log(arr, typeof result);
+// console.log(arr, typeof result);
+
+// console.log(true, false);
+
+// let mail = 'codeslinger@gmail.com';
+
+// console.log(mail.includes('@'));
+// console.log(arr.includes(5));
+
+let radius = 10;
+const pi = 3.1416;
+
+console.log(radius, pi);
+
+// Order of operation B I D M A S
+// () => ** => / => * => + => -
+
+// console.log(5 * (10 - 3) ** 2);
+
+// console.log((radius += 10));
+
+// console.log((radius -= 5));
+// console.log(radius);
+
+// console.log('Line 1\nLine 2\nLine 3');
+// console.log(`line 1
+// line 2
+// line 3`);
+
+// console.log('Test"Test"');
+
+// console.log(pi[1]);
+
+let quote = 'lorem';
+
+console.log(quote[3]);
+
+let fullName = 'Sakib Ahmed';
+
+// console.log(fullName.toLowerCase());
+
+// console.log(fullName.toUpperCase());
+
+// console.log(`${fullName.indexOf('med')}`);
+// console.log(`${fullName.indexOf('Sak')}`);
