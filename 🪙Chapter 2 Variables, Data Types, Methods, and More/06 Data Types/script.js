@@ -207,4 +207,10 @@ let emoji = '🧓';
 // let bigInt = 1_000_560_000_000n;
 // console.log(bigInt);
 let arr = [1, 2, 3, 4, 5];
-console.log(arr.length);
+// console.log(arr.length);
+
+// let result = arr.join(',');
+// let result = arr.concat(['ken', 'doll']);
+let result = arr.push('test');
+
+console.log(arr, typeof result);
