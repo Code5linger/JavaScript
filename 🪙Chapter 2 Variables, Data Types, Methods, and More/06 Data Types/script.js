@@ -42,27 +42,133 @@
 
 // let firstName = 'Elrick';
 
-let person = {
-  firstName: 'Sakib',
-  lastName: 'Ahmed',
-  age: 69,
-  hello: function () {
-    return 'Hello ' + this.firstName + '👋';
-  },
-};
+// let person = {
+//   firstName: 'Sakib',
+//   lastName: 'Ahmed',
+//   age: 69,
+//   hello: function () {
+//     return 'Hello ' + this.firstName + '👋';
+//   },
+// };
 
-console.log(person.hello());
+// console.log(person.hello());
 
 //Undefined vs Null
 //
 
-let test = undefined;
-console.log(typeof test); //undefined
+// let test = undefined;
+// console.log(typeof test); //undefined
 
-let testA = null;
-console.log(typeof testA); // object
+// let testA = null;
+// console.log(typeof testA); // object
 
-let mail = 'codeslinger.io@gmail.com';
+// let mail = 'codeslinger.io@gmail.com';
 
-console.log(mail.lastIndexOf('o'));
-console.log(mail.indexOf('o'));
+// console.log(mail.lastIndexOf('o'));
+// console.log(mail.indexOf('o'));
+
+// let testA = false;
+// console.log(testA);
+
+// let testB = true;
+// console.log(testB);
+
+// let notTestA = !false;
+// console.log(notTestA);
+
+// let notTestB = !true;
+// console.log(notTestB);
+
+// let firstName = 'Elrick';
+
+let person = {
+  firstName: 'Sakib',
+  lastName: 'Ahmed',
+  age: 69,
+  func: function () {
+    return 'Hello ' + this.firstName;
+  },
+};
+
+// console.log(person);
+// console.log(person.age);
+// console.log(person.func());
+
+// What is the difference between Undefined & Null
+// A variable gets undefined if we don't add any value to it. Null you have to assign manually
+
+// let testC;
+// console.log(testC, typeof testC);
+
+// let testD = null;
+// console.log(testD, typeof testD);
+
+// let email = 'codeslinger.io@gmail.com';
+
+// console.log(email.lastIndexOf('o'));
+// console.log(email.indexOf('o'));
+
+// let arr = [1, 2, 3, 4];
+// console.log(typeof arr);
+
+// let date = new Date();
+// console.log(typeof date);
+
+// let lit = `Blah Blah ${date} ...`;
+// console.log(typeof lit);
+
+// console.log(typeof person);
+
+// let email = 'codeslinger.io@gmail.com';
+
+// console.log(email.slice(12, 14));
+// console.log(email);
+
+// console.log(email.substr(0, 11));
+// console.log(email);
+
+// console.log(email.replace('io', '69'));
+// console.log(email);
+
+// console.log(email.replaceAll('o', '⭕'));
+// console.log(email);
+
+//
+//
+// let err = error('💥');
+// console.log(err);
+
+// let fName = 'sakib';
+// console.log(fName.toUpperCase());
+
+let title = 'Hi, I am ';
+let age = 30;
+let emoji = '🧓';
+
+// Concatenation Way
+// console.log(title + age + emoji);
+// Template String Way
+// console.log(`${title} ${age} ${emoji}`);
+// let A = Math.random() * 10;
+// let B = Math.random() * 10;
+// let C = Math.random() * 10;
+// let D = Math.random() * 10;
+
+// let A1 = Math.floor(A);
+// let B1 = Math.floor(B);
+// let C1 = Math.floor(C);
+// let D1 = Math.floor(D);
+
+// console.log(A1, B1, C1, D1);
+
+let bacA = Math.floor(Math.random() * 16777215).toString(16);
+let bacB = Math.floor(Math.random() * 16777215).toString(16);
+
+let html = `<div style ="display: flex;color: red;align-items: flex-end;justify-content: center; color: red; background: linear-gradient(to right, #${bacA}, #${bacB});">
+<h3>${title}</h3>
+<h1>${age} </h1>
+<h1>${emoji}</h1>
+</div>`;
+
+document.querySelector('body').innerHTML = html;
+//
