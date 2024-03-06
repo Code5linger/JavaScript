@@ -182,21 +182,29 @@ let emoji = '🧓';
 // delete person.age;
 // console.log(person.func());
 
-let num1 = 6;
-let num2 = -100000000000000;
+// let num1 = 6;
+// let num2 = -100000000000000;
 
-let num4 = 900000000000000000000000000000000000000000000000000000000000;
+// let num4 = 900000000000000000000000000000000000000000000000000000000000;
 
-console.log(num4);
+// console.log(num4);
 
-let num5 = -80000000000000000000000000000000000000000000000000000000000;
+// let num5 = -80000000000000000000000000000000000000000000000000000000000;
 
-console.log(num5);
+// console.log(num5);
 
-let num6 = 1.2e10;
-console.log(num6);
+// let num6 = 1.2e10;
+// console.log(num6);
 
-console.log(`${Number.MIN_VALUE}`);
-console.log(`${Number.MIN_SAFE_INTEGER}`);
-console.log(`${Number.MAX_VALUE}`);
-console.log(`${Number.MAX_SAFE_INTEGER}`);
+// console.log(`${Number.MIN_VALUE}`);
+// console.log(`${Number.MIN_SAFE_INTEGER}`);
+// // console.log(`${Number.}`);
+
+// let num = Number.MAX_VALUE;
+// let num_ = 1n;
+// console.log(typeof num_);
+
+// let bigInt = 1_000_560_000_000n;
+// console.log(bigInt);
+let arr = [1, 2, 3, 4, 5];
+console.log(arr.length);
