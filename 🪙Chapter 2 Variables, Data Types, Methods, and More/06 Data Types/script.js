@@ -246,11 +246,11 @@ console.log(radius, pi);
 
 // console.log(pi[1]);
 
-let quote = 'lorem';
+// let quote = 'lorem';
 
-console.log(quote[3]);
+// console.log(quote[3]);
 
-let fullName = 'Sakib Ahmed';
+// let fullName = 'Sakib Ahmed';
 
 // console.log(fullName.toLowerCase());
 
@@ -258,3 +258,9 @@ let fullName = 'Sakib Ahmed';
 
 // console.log(`${fullName.indexOf('med')}`);
 // console.log(`${fullName.indexOf('Sak')}`);
+
+// What is TypeScript :: TypeScript is a superset of JavaScript, which allow static-typing. This can make our code more verbose and less prone to errors.
+//
+
+const id = Symbol();
+console.log(typeof id);
