@@ -49,6 +49,7 @@ let objB = { d: 1, e: 2, f: 3 };
 let objC = { ...objA, ...objB };
 let objD = Object.assign({}, objA, objB);
 
-console.log(objD);
+let test = [objA, objB, objC];
+console.log(test[0].a);
 
 // // WTF 8
