@@ -102,32 +102,32 @@ const promise = new Promise((resolve, reject) => {
   }, 1000);
 });
 
-promise
-  .then((user) => {
-    console.log(user);
-    return user.name;
-  })
-  .then((name) => {
-    console.log(name);
-    return name.length;
-  })
-  .then((nameLength) => {
-    console.log(nameLength);
-  })
-  .catch((error) => {
-    console.log(error);
-  })
-  .then(() => {
-    console.log('Error the ERROR');
-    return 69;
-  })
-  .then((x) => {
-    console.log(x);
-    return 420;
-  })
-  .then((y) => {
-    console.log(y);
-  })
-  .finally(() => {
-    console.log('✒️fin');
-  });
+// promise
+//   .then((user) => {
+//     console.log(user);
+return user.name;
+//   })
+//   .then((name) => {
+//     console.log(name);
+//     return name.length;
+//   })
+//   .then((nameLength) => {
+//     console.log(nameLength);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   })
+//   .then(() => {
+//     console.log('Error the ERROR');
+//     return 69;
+//   })
+//   .then((x) => {
+//     console.log(x);
+//     return 420;
+//   })
+//   .then((y) => {
+//     console.log(y);
+//   })
+//   .finally(() => {
+//     console.log('✒️fin');
+//   });
