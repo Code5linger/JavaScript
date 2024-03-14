@@ -109,4 +109,37 @@ console.log();
 //     console.log(actors);
 //   });
 
+// console.log();
+
 console.log();
+
+function getData(endpoint) {
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('GET', endpoint);
+
+    xhr.onreadystatechange = function () {
+      if (this.readyState === 4) {
+        if (this.status === 200) {
+          resolve(JSON.parse(this.responseText));
+        } else {
+          reject('Error ❌');
+        }
+      }
+    };
+
+    setTimeout(() => {
+      xhr.send();
+    }, Math.floor(Math.random() * 3000) + 1000);
+  });
+}
+
+getData('./actors.json')
+  .then((actors) => {
+    console.log(actors);
+    return actors.get;
+  })
+  .then((actorsName) => {
+    console.log(actorsName);
+  });
