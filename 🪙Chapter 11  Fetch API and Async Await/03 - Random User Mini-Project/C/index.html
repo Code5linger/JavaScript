@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./spinner.css" />
+
+    <style>
+      .container {
+        border: 2px solid black;
+        padding: 1rem;
+        margin: 5rem 0;
+        max-width: 50rem;
+        text-align: center;
+      }
+      .apiFeed {
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+      }
+      .content {
+        margin: 0 1rem;
+      }
+      button {
+        background-color: black;
+        color: white;
+        padding: 1rem 15rem;
+        font-size: 1rem;
+        border-radius: 0.25rem;
+      }
+      img {
+        display: block;
+        /* max-width: 100%; */
+        height: auto;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Random User Generator</h1>
+      <button id="btn">
+        <!-- <img src="./spinner.css" alt="" /> -->
+        <div class="spinner"></div>
+        Generate User
+      </button>
+      <div class="apiFeed">
+        <img src="./Dtafalonso-Yosemite-Flat-Game-Center.ico" alt="" />
+        <div class="content">
+          <h2>Name:</h2>
+          <h2>Email:</h2>
+          <h2>Phone:</h2>
+          <h2>Location:</h2>
+          <h2>Age:</h2>
+        </div>
+      </div>
+    </div>
+    <!-- SJ -->
+    <script src="./script.js"></script>
+  </body>
+</html>
