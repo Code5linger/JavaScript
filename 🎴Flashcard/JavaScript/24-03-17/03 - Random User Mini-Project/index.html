@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      .card {
+        min-width: 50rem;
+        max-width: 60rem;
+        border: 2px solid black;
+        border-radius: 0.5rem;
+        margin: 0 auto;
+        margin-top: 2.5rem;
+      }
+      header {
+        text-align: center;
+      }
+      main {
+        display: flex;
+        /* justify-content: center; */
+        justify-content: flex-start;
+      }
+      button {
+        padding: 1rem 10rem;
+        width: 95%;
+        font-size: 1rem;
+        background: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <header>
+        <h1>Random User Generator</h1>
+        <button>Generate User</button>
+      </header>
+      <main>
+        <img
+          class="imageContent"
+          src="./Dtafalonso-Yosemite-Flat-Game-Center.ico"
+          alt=""
+          srcset=""
+        />
+        <div class="textContent">
+          <h3>Name:</h3>
+          <h3>Email:</h3>
+          <h3>Phone:</h3>
+          <h3>Location:</h3>
+          <h3>Age:</h3>
+        </div>
+      </main>
+    </div>
+    <!-- JS -->
+    <script src="./script.js"></script>
+  </body>
+</html>
