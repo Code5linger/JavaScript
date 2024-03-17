@@ -13,7 +13,7 @@
       .card {
         min-width: 50rem;
         max-width: 60rem;
-        border: 2px solid black;
+        border: 2px solid white;
         border-radius: 0.5rem;
         margin: 0 auto;
         margin-top: 2.5rem;
@@ -47,21 +47,24 @@
         width: auto;
         /* height: 100%; */
       }
+      .spinner {
+        position: relative;
+        background: crimson;
+      }
     </style>
+    <link class="spinner" rel="stylesheet" href="./spinner.css" />
   </head>
   <body>
     <div class="card">
       <header>
         <h1>Random User Generator</h1>
-        <button>Generate User</button>
+        <button>
+          <div class="spinner hidden"></div>
+          Generate User
+        </button>
       </header>
       <main>
-        <img
-          class="imageContent"
-          src="./Dtafalonso-Yosemite-Flat-Game-Center.ico"
-          alt=""
-          srcset=""
-        />
+        <img class="imageContent" src="" alt="" srcset="" />
         <div class="textContent">
           <h3><strong>Name:</strong></h3>
           <h3><strong>Email:</strong></h3>

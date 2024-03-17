@@ -1,7 +1,11 @@
 function fetchUser() {
+  showSpinner();
   fetch('https://randomuser.me/api/')
     .then((res) => res.json())
-    .then((data) => displayUser(data.results[0]));
+    .then((data) => {
+      hideSpinner();
+      displayUser(data.results[0]);
+    });
 }
 function displayUser(user) {
   let element = document.querySelector('main');
@@ -38,3 +42,11 @@ function displayUser(user) {
 document.querySelector('button').addEventListener('click', fetchUser);
 
 addEventListener('DOMContentLoaded', fetchUser);
+
+function showSpinner() {
+  document.querySelector('.spinner').style.display = 'block';
+}
+
+function hideSpinner() {
+  document.querySelector('.spinner').style.display = 'none';
+}
