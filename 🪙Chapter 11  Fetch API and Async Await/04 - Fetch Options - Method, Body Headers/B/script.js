@@ -164,3 +164,13 @@
 // console.log('Test');
 
 const apiURL = 'https://jsonplaceholder.typicode.com/posts';
+
+const getTitle = () => {
+  fetch(apiURL)
+    .then((res) => res.json())
+    .then((data) => {
+      data.forEach((todo) => console.log(todo.title));
+    });
+};
+
+getTitle();
