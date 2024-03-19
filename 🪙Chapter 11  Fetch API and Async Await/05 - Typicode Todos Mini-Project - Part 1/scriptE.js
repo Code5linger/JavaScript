@@ -8,6 +8,7 @@ const fetchAPI = () => {
 
 const addToDosToDom = (todo) => {
   const div = document.createElement('div');
+  div.classList.add('todo');
   div.appendChild(document.createTextNode(todo.title));
 
   document.querySelector('#todo-list').appendChild(div);
@@ -37,9 +38,18 @@ const addNewTodos = (event) => {
     .then((data) => addToDosToDom(data));
 };
 
+const toggleCompleted = (event) => {
+  if (event.target.classList.contains('todo')) {
+    event.target.classList.toggle('done');
+  }
+};
+
 const initiate = () => {
   document.addEventListener('DOMContentLoaded', fetchAPI);
   document.querySelector('#todo-form').addEventListener('submit', addNewTodos);
+  document
+    .querySelector('#todo-list')
+    .addEventListener('click', toggleCompleted);
 };
 
 initiate();

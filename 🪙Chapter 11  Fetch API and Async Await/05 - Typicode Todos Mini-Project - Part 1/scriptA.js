@@ -1,7 +1,7 @@
 const apiURL = 'https://jsonplaceholder.typicode.com/todos';
 
 const fetchData = () => {
-  fetch(apiURL + '?_limit=5')
+  fetch(apiURL + '?_limit=10')
     .then((res) => res.json())
     .then((data) =>
       data.forEach((todo) => {
@@ -12,9 +12,8 @@ const fetchData = () => {
 
 const todoDOM = (todo) => {
   const div = document.createElement('div');
-  const fetchedDiv = document.createTextNode(todo.title);
-  div.appendChild(fetchedDiv);
-
+  div.classList.add('todo');
+  div.appendChild(document.createTextNode(todo.title));
   div.setAttribute('data-id', todo.id);
 
   if (todo.completed === true) {
@@ -24,4 +23,35 @@ const todoDOM = (todo) => {
   document.querySelector('#todo-list').appendChild(div);
 };
 
-fetchData();
+const createNewToDos = (event) => {
+  event.preventDefault();
+
+  fetch(apiURL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      title: event.target.firstElementChild.value,
+      completed: false,
+    }),
+  })
+    .then((res) => res.json())
+    .then((data) => todoDOM(data));
+};
+
+const toggleComplete = (event) => {
+  if (event.target.classList.contains('todo')) {
+    event.target.classList.toggle('done');
+  }
+};
+
+const initialze = () => {
+  document.addEventListener('DOMContentLoaded', fetchData);
+  document
+    .querySelector('#todo-form')
+    .addEventListener('submit', createNewToDos);
+  document
+    .querySelector('#todo-list')
+    .addEventListener('click', toggleComplete);
+};
+
+initialze();

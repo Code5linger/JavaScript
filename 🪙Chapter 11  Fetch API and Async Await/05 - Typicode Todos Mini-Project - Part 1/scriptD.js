@@ -1,13 +1,14 @@
 const apiURL = 'https://jsonplaceholder.typicode.com/todos';
 
 const fetchApi = () => {
-  fetch(apiURL + '?_limit=5')
+  fetch(apiURL + '?_limit=10')
     .then((res) => res.json())
     .then((data) => data.forEach((todo) => addTodosToDOM(todo)));
 };
 
 const addTodosToDOM = (todo) => {
   const div = document.createElement('div');
+  div.classList.add('todo');
   div.appendChild(document.createTextNode(todo.title));
 
   document.querySelector('#todo-list').appendChild(div);
@@ -37,9 +38,19 @@ const addNewToDos = (event) => {
     .then((data) => addTodosToDOM(data));
 };
 
+const toggleCompleted = (event) => {
+  if (event.target.classList.contains('todo')) {
+    event.target.classList.toggle('done');
+  }
+  // event.target.classList.toggle('done');
+};
+
 const initiate = () => {
   document.addEventListener('DOMContentLoaded', fetchApi);
   document.querySelector('#todo-form').addEventListener('submit', addNewToDos);
+  document
+    .querySelector('#todo-list')
+    .addEventListener('click', toggleCompleted);
 };
 
 initiate();

@@ -8,6 +8,7 @@ const fetchAPI = () => {
 
 const addToDosToDOM = (todos) => {
   const div = document.createElement('div');
+  div.classList.add('todo');
   div.appendChild(document.createTextNode(todos.title));
 
   if (todos.completed === true) {
@@ -38,7 +39,9 @@ const createNewToDos = (event) => {
 };
 
 const toggleCompleted = (event) => {
-  event.target.classList.toggle('done');
+  if (event.target.classList.contains('todo')) {
+    event.target.classList.toggle('done');
+  }
 };
 
 const initialze = () => {
