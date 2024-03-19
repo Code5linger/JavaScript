@@ -14,7 +14,12 @@ const todoDOM = (todo) => {
   const div = document.createElement('div');
   const fetchedDiv = document.createTextNode(todo.title);
   div.appendChild(fetchedDiv);
-  console.log(div);
+
+  div.setAttribute('data-id', todo.id);
+
+  if (todo.completed === true) {
+    div.classList.add('done');
+  }
 
   document.querySelector('#todo-list').appendChild(div);
 };
