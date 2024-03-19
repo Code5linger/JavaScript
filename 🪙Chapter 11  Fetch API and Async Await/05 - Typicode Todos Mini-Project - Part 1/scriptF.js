@@ -37,11 +37,20 @@ const createNewToDos = (event) => {
     .then((data) => addToDosToDOM(data));
 };
 
+const toggleCompleted = (event) => {
+  event.target.classList.toggle('done');
+};
+
 const initialze = () => {
   document.addEventListener('DOMContentLoaded', fetchAPI);
   document
     .querySelector('#todo-form')
     .addEventListener('submit', createNewToDos);
+  document
+    .querySelector('#todo-list')
+    .addEventListener('click', toggleCompleted);
 };
 
 initialze();
+
+//
