@@ -41,7 +41,26 @@ const addNewTodos = (event) => {
 const toggleCompleted = (event) => {
   if (event.target.classList.contains('todo')) {
     event.target.classList.toggle('done');
+
+    updateTodo(
+      event.target.dataset.id,
+      event.target.classList.contains('done')
+    );
   }
+};
+
+const updateTodo = (id, completed) => {
+  fetch(`${apiURl}/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      completed,
+    }),
+  })
+    .then((res) => res.json())
+    .then((data) => console.log(data));
 };
 
 const initiate = () => {

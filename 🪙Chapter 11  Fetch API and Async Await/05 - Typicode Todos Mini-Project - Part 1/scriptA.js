@@ -41,6 +41,8 @@ const createNewToDos = (event) => {
 const toggleComplete = (event) => {
   if (event.target.classList.contains('todo')) {
     event.target.classList.toggle('done');
+
+    console.log(event.target.dataset.id);
   }
 };
 

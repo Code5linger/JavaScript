@@ -299,8 +299,13 @@ const createTODOs = (event) => {
 const toggleComplete = (event) => {
   if (event.target.classList.contains('todo')) {
     event.target.classList.toggle('done');
+
+    updateTodo();
+    console.log(event.target.dataset.id);
   }
 };
+
+const updateTodo = (id, completed) => {};
 
 const init = () => {
   document.addEventListener('DOMContentLoaded', getTODOs);
@@ -311,3 +316,5 @@ const init = () => {
 };
 
 init();
+
+console.log();
