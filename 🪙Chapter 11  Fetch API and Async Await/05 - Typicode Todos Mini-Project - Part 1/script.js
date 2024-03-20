@@ -300,21 +300,48 @@ const toggleComplete = (event) => {
   if (event.target.classList.contains('todo')) {
     event.target.classList.toggle('done');
 
-    updateTodo();
-    console.log(event.target.dataset.id);
+    updateTodo(
+      event.target.dataset.id,
+      event.target.classList.contains('done')
+    );
   }
 };
 
-const updateTodo = (id, completed) => {};
+const updateTodo = (id, completed) => {
+  fetch(`${apiURL}/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      completed,
+    }),
+  });
+  // .then((res) => res.json())
+  // .then((data) => console.log(data));
+};
+
+const deleteTodo = (event) => {
+  if (event.target.classList.contains('todo')) {
+    const id = event.target.dataset.id;
+    fetch(`${apiURL}/${id}`, {
+      method: 'DELETE',
+    })
+      .then((res) => res.json())
+      .then(() => event.target.remove());
+  }
+};
 
 const init = () => {
   document.addEventListener('DOMContentLoaded', getTODOs);
+
   document.querySelector('#todo-form').addEventListener('submit', createTODOs);
+
   document
     .querySelector('#todo-list')
     .addEventListener('click', toggleComplete);
+
+  document.querySelector('#todo-list').addEventListener('dblclick', deleteTodo);
 };
 
 init();
-
-console.log();

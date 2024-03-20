@@ -58,19 +58,31 @@ const updateTodo = (id, completed) => {
     headers: {
       'Content-Type': 'application/json',
     },
-  })
+  });
+  // .then((res) => res.json())
+  // .then((data) => console.log(data));
+};
+
+const deleteTodo = (event) => {
+  const id = event.target.dataset.id;
+
+  fetch(`${apiURL}/${id}`)
     .then((res) => res.json())
-    .then((data) => console.log(data));
+    .then(() => event.target.remove());
 };
 
 const initialze = () => {
   document.addEventListener('DOMContentLoaded', fetchAPI);
+
   document
     .querySelector('#todo-form')
     .addEventListener('submit', createNewToDos);
+
   document
     .querySelector('#todo-list')
     .addEventListener('click', toggleCompleted);
+
+  document.querySelector('#todo-list').addEventListener('dblclick', deleteTodo);
 };
 
 initialze();

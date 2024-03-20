@@ -58,9 +58,19 @@ const updateTodo = (id, completed) => {
     body: JSON.stringify({
       completed,
     }),
-  })
-    .then((res) => res.json())
-    .then((data) => console.log(data));
+  });
+  // .then((res) => res.json())
+  // .then((data) => console.log(data));
+};
+
+const deleteTodo = (event) => {
+  if (event.target.classList.contains('todo')) {
+    const id = event.target.dataset.id;
+
+    fetch(`${apiURL}/${id}`)
+      .then((res) => res.json())
+      .then(() => event.target.remove());
+  }
 };
 
 const initiate = () => {
@@ -69,6 +79,7 @@ const initiate = () => {
   document
     .querySelector('#todo-list')
     .addEventListener('click', toggleCompleted);
+  document.querySelector('#todo-list').addEventListener('dblclick', deleteTodo);
 };
 
 initiate();
