@@ -72,10 +72,13 @@ const deleteTodo = (event) => {
 
 const initiat = () => {
   document.addEventListener('DOMContentLoaded', fetchAPI);
+
   document.querySelector('#todo-form').addEventListener('submit', addNewTodos);
+
   document
     .querySelector('#todo-list')
     .addEventListener('click', toggleCompleted);
+
   document.querySelector('#todo-list').addEventListener('dblclick', deleteTodo);
 };
 
