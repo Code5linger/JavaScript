@@ -87,3 +87,5 @@ const initialze = () => {
 };
 
 initialze();
+
+<CLg></CLg>;

@@ -57,11 +57,31 @@
 // fetchUser();
 // fetchUser();
 
+// function fetchUser() {
+//   showSpinner();
+//   fetch('https://randomuser.me/api/')
+//     .then((response) => {
+//       if (!response.ok) {
+//         throw new Error('Request Failed');
+//       }
+//       return response.json();
+//     })
+//     .then((data) => {
+//       hideSpinner();
+//       displayUser(data.results[0]);
+//     })
+//     .catch((error) => {
+//       hideSpinner();
+//       document.querySelector('#user').innerHTML = `<p>${error}</p>`;
+//     });
+// }
+console.log();
+// 02
 function fetchUser() {
   showSpinner();
   fetch('https://randomuser.me/api/X')
     .then((response) => {
-      if (!response.ok) {
+      if (response.status === 404) {
         throw new Error('Request Failed');
       }
       return response.json();
@@ -73,6 +93,21 @@ function fetchUser() {
     .catch((error) => {
       hideSpinner();
       document.querySelector('#user').innerHTML = `<p>${error}</p>`;
+    });
+}
+// Default
+function fetchUser() {
+  showSpinner();
+  fetch('https://randomuser.me/api/X')
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      hideSpinner();
+      displayUser(data.results[0]);
+    })
+    .catch(() => {
+      hideSpinner();
     });
 }
 
